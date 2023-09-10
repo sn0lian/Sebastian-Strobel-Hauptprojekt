@@ -1,0 +1,949 @@
+/home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages/lightning_fabric/connector.py:554: UserWarning: 16 is supported for historical reasons but its usage is discouraged. Please set your precision to 16-mixed instead!
+  rank_zero_warn(
+Using 16bit Automatic Mixed Precision (AMP)
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+You are using a CUDA device ('NVIDIA GeForce RTX 3090') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+  | Name  | Type                      | Params
+----------------------------------------------------
+0 | model | VisionEncoderDecoderModel | 201 M
+----------------------------------------------------
+201 M     Trainable params
+0         Non-trainable params
+201 M     Total params
+807.461   Total estimated model params size (MB)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+/home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages/transformers/generation/utils.py:1411: UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed soon, in a future version. Please use a generation configuration file (see https://huggingface.co/docs/transformers/main_classes/text_generation )
+  warnings.warn(
+/home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:399: UserWarning: `num_beams` is set to 1. However, `early_stopping` is set to `True` -- this flag is only used in beam-based generation modes. You should set `num_beams>1` or unset `early_stopping`.
+  warnings.warn(
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+/home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages/pytorch_lightning/utilities/data.py:76: UserWarning: Trying to infer the `batch_size` from an ambiguous collection. The batch size we found is 1. To avoid any miscalculations, use `self.log(..., batch_size=batch_size)`.
+  warning_cache.warn(
+ Normed ED: 0.381635581061693
+ Normed ED: 0.6001487127056417
+ Normed ED: 0.5330720235178834
+ Normed ED: 0.19609687279567364
+ Normed ED: 0.16838134430727023
+ Normed ED: 0.1815856777493606
+ Normed ED: 0.656135881104034
+ Normed ED: 0.36090953072085147
+ Normed ED: 0.230291135099771
+ Normed ED: 0.6447811447811448
+ Normed ED: 0.20424158598432457
+ Normed ED: 0.4284309594044107
+ Normed ED: 0.12156295224312591
+ Normed ED: 0.31848983543078413
+ Normed ED: 0.21836925960637302
+ Normed ED: 0.3928422804827299
+ Normed ED: 0.1847796331782097
+ Normed ED: 0.17672557519173057
+ Normed ED: 0.2577151032086654
+ Normed ED: 0.24107318997829946
+ Normed ED: 0.5151515151515151
+ Normed ED: 0.6814637072585483
+ Normed ED: 0.8020245769540693
+ Normed ED: 0.37419731465265615
+ Normed ED: 0.32116067903671536
+ Normed ED: 0.6183874498358264
+ Normed ED: 0.6641194859326155
+ Normed ED: 0.3872549019607843
+ Normed ED: 0.1724493301271041
+ Normed ED: 0.34541176470588236
+ Normed ED: 0.2861083743842365
+ Normed ED: 0.5601980198019803
+ Normed ED: 0.3117940635671132
+ Normed ED: 0.2701705855232826
+ Normed ED: 0.5191557696719431
+ Normed ED: 0.4629021667760998
+ Normed ED: 0.17075386012715713
+ Normed ED: 0.9018074383037886
+ Normed ED: 0.5884892086330935
+ Normed ED: 0.5297142857142857
+ Normed ED: 0.5523465703971119
+ Normed ED: 0.3210896847260484
+ Normed ED: 0.15219907407407407
+ Normed ED: 0.1631578947368421
+ Normed ED: 0.6394686907020873
+ Normed ED: 0.24291871921182265
+ Normed ED: 0.5873229939312204
+ Normed ED: 0.629359197907585
+ Normed ED: 0.7330127978505268
+ Normed ED: 0.5641877411058722
+Pushing model to the hub, epoch 0
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+/home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:399: UserWarning: `num_beams` is set to 1. However, `early_stopping` is set to `True` -- this flag is only used in beam-based generation modes. You should set `num_beams>1` or unset `early_stopping`.
+  warnings.warn(
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+ Normed ED: 0.18998527245949925
+ Normed ED: 0.5918765684543174
+ Normed ED: 0.4160971905846621
+ Normed ED: 0.1730543146014578
+ Normed ED: 0.134375
+ Normed ED: 0.16873278236914602
+ Normed ED: 0.6729511677282378
+ Normed ED: 0.2883405902273827
+ Normed ED: 0.21491658488714427
+ Normed ED: 0.5614418350628072
+ Normed ED: 0.22930800542740842
+ Normed ED: 0.4027251018401461
+ Normed ED: 0.0997250687328168
+ Normed ED: 0.15065913370998116
+ Normed ED: 0.2151029748283753
+ Normed ED: 0.36762806715454155
+ Normed ED: 0.25349028196003287
+ Normed ED: 0.24707455700434638
+ Normed ED: 0.1947680359697527
+ Normed ED: 0.25784178338922864
+ Normed ED: 0.4002361275088548
+ Normed ED: 0.32207578253706753
+ Normed ED: 0.8038879935535859
+ Normed ED: 0.17582417582417584
+ Normed ED: 0.27240426371891036
+ Normed ED: 0.5339896858884201
+ Normed ED: 0.41109422492401215
+ Normed ED: 0.3628982843137255
+ Normed ED: 0.1394736842105263
+ Normed ED: 0.17639902676399027
+ Normed ED: 0.29182266009852215
+ Normed ED: 0.6172277227722772
+ Normed ED: 0.2303789913458669
+ Normed ED: 0.22130013831258644
+ Normed ED: 0.6744666207845836
+ Normed ED: 0.45699277741300065
+ Normed ED: 0.09639920612418486
+ Normed ED: 0.9000198619593823
+ Normed ED: 0.43268053855569155
+ Normed ED: 0.27348066298342544
+ Normed ED: 0.5100440960313571
+ Normed ED: 0.3939393939393939
+ Normed ED: 0.1177525403466826
+ Normed ED: 0.10751879699248121
+ Normed ED: 0.362112586970272
+ Normed ED: 0.2453438395415473
+ Normed ED: 0.5631602607327489
+ Normed ED: 0.6065823888404533
+ Normed ED: 0.732588559711518
+ Normed ED: 0.5485426489498499
+Pushing model to the hub, epoch 1
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+/home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:399: UserWarning: `num_beams` is set to 1. However, `early_stopping` is set to `True` -- this flag is only used in beam-based generation modes. You should set `num_beams>1` or unset `early_stopping`.
+  warnings.warn(
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+ Normed ED: 0.23461012311901505
+ Normed ED: 0.5897388233107166
+ Normed ED: 0.40167046317388005
+ Normed ED: 0.19045379731953915
+ Normed ED: 0.07109375
+ Normed ED: 0.14979338842975207
+ Normed ED: 0.6675159235668789
+ Normed ED: 0.24866956942428642
+ Normed ED: 0.17533529604187112
+ Normed ED: 0.6613431613431613
+ Normed ED: 0.18542757417102967
+ Normed ED: 0.3808119117853631
+ Normed ED: 0.1088929219600726
+ Normed ED: 0.1838886545761282
+ Normed ED: 0.21030444964871195
+ Normed ED: 0.2683333333333333
+ Normed ED: 0.19162332329592116
+ Normed ED: 0.13285574731357863
+ Normed ED: 0.2129572859186593
+ Normed ED: 0.22193726573288616
+ Normed ED: 0.4490358126721763
+ Normed ED: 0.19110378912685339
+ Normed ED: 0.8064564867042707
+ Normed ED: 0.1569324530218385
+ Normed ED: 0.23549151204105803
+ Normed ED: 0.3966565349544073
+ Normed ED: 0.5301204819277109
+ Normed ED: 0.37392769607843135
+ Normed ED: 0.1018796992481203
+ Normed ED: 0.00364741641337386
+ Normed ED: 0.25399014778325124
+ Normed ED: 0.23386138613861387
+ Normed ED: 0.1542319749216301
+ Normed ED: 0.1457103949160236
+ Normed ED: 0.5104381738930948
+ Normed ED: 0.46460932370321734
+ Normed ED: 0.10619718309859155
+ Normed ED: 0.8947812701723025
+ Normed ED: 0.4291799787007455
+ Normed ED: 0.1427255985267035
+ Normed ED: 0.502633118782914
+ Normed ED: 0.48829098156452416
+ Normed ED: 0.12253436939629408
+ Normed ED: 0.09674185463659148
+ Normed ED: 0.21568627450980393
+ Normed ED: 0.17084527220630372
+ Normed ED: 0.5841762193751405
+ Normed ED: 0.5945945945945946
+ Normed ED: 0.7245280350703528
+ Normed ED: 0.5370767252464638
+Pushing model to the hub, epoch 2
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+/home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:399: UserWarning: `num_beams` is set to 1. However, `early_stopping` is set to `True` -- this flag is only used in beam-based generation modes. You should set `num_beams>1` or unset `early_stopping`.
+  warnings.warn(
+ Normed ED: 0.30844793713163066
+ Normed ED: 0.6117668928339065
+ Normed ED: 0.3333333333333333
+ Normed ED: 0.5262167881495415
+ Normed ED: 0.0046875
+ Normed ED: 0.18732782369146006
+ Normed ED: 0.6715923566878981
+ Normed ED: 0.25012094823415576
+ Normed ED: 0.038272816486751716
+ Normed ED: 0.017924528301886792
+ Normed ED: 0.18463497453310695
+ Normed ED: 0.3789858126141312
+ Normed ED: 0.032627221816411006
+ Normed ED: 0.003872216844143272
+ Normed ED: 0.002506265664160401
+ Normed ED: 0.0044444444444444444
+ Normed ED: 0.1522036682179031
+ Normed ED: 0.15701415701415702
+ Normed ED: 0.1737175556918046
+ Normed ED: 0.18662458078516472
+ Normed ED: 0.40613931523022434
+ Normed ED: 0.12602965403624383
+ Normed ED: 0.8055499597099114
+ Normed ED: 0.0035460992907801418
+ Normed ED: 0.22799052506908804
+ Normed ED: 0.23232323232323232
+ Normed ED: 0.2553191489361702
+ Normed ED: 0.3397671568627451
+ Normed ED: 0.002255639097744361
+ Normed ED: 0.00364741641337386
+ Normed ED: 0.19665024630541872
+ Normed ED: 0.16752475247524753
+ Normed ED: 0.1778297747879497
+ Normed ED: 0.01429230059935454
+ Normed ED: 0.5108969947235604
+ Normed ED: 0.45292186474064344
+ Normed ED: 0.10120888389091931
+ Normed ED: 0.8919757684095536
+ Normed ED: 0.014598540145985401
+ Normed ED: 0.01289134438305709
+ Normed ED: 0.39113428943937417
+ Normed ED: 0.3322928490351873
+ Normed ED: 0.1121683967704729
+ Normed ED: 0.11806930693069306
+ Normed ED: 0.2767235926628716
+ Normed ED: 0.061246418338108885
+ Normed ED: 0.5276466621712744
+ Normed ED: 0.5722537053182214
+ Normed ED: 0.7197200028282542
+ Normed ED: 0.5274324903557651
+Pushing model to the hub, epoch 3
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+/home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:399: UserWarning: `num_beams` is set to 1. However, `early_stopping` is set to `True` -- this flag is only used in beam-based generation modes. You should set `num_beams>1` or unset `early_stopping`.
+  warnings.warn(
+ Normed ED: 0.36173838943331915
+ Normed ED: 0.5747746073055117
+ Normed ED: 0.011389521640091117
+ Normed ED: 0.16223841993886667
+ Normed ED: 0.00507416081186573
+ Normed ED: 0.15392561983471073
+ Normed ED: 0.6630148619957538
+ Normed ED: 0.24963715529753266
+ Normed ED: 0.039897039897039896
+ Normed ED: 0.012287334593572778
+ Normed ED: 0.15471167369901548
+ Normed ED: 0.3577749683944374
+ Normed ED: 0.03124218945263684
+ Normed ED: 0.003388189738625363
+ Normed ED: 0.00400600901352028
+ Normed ED: 0.0044444444444444444
+ Normed ED: 0.2179030933479332
+ Normed ED: 0.18689401537947176
+ Normed ED: 0.16758634784385856
+ Normed ED: 0.17774709015584927
+ Normed ED: 0.4541519086973632
+ Normed ED: 0.01070840197693575
+ Normed ED: 0.7948730862207897
+ Normed ED: 0.0
+ Normed ED: 0.22463482037110147
+ Normed ED: 0.14840714840714841
+ Normed ED: 0.02127659574468085
+ Normed ED: 0.3293504901960784
+ Normed ED: 0.035338345864661655
+ Normed ED: 0.0036496350364963502
+ Normed ED: 0.20039408866995073
+ Normed ED: 0.16495049504950496
+ Normed ED: 0.21253918495297805
+ Normed ED: 0.0119870908252651
+ Normed ED: 0.5097499426473961
+ Normed ED: 0.4359816152330926
+ Normed ED: 0.049349076597033
+ Normed ED: 0.8920254233080094
+ Normed ED: 0.01551094890510949
+ Normed ED: 0.014732965009208104
+ Normed ED: 0.19035202086049544
+ Normed ED: 0.185957213384531
+ Normed ED: 0.049013747758517634
+ Normed ED: 0.030827067669172932
+ Normed ED: 0.11480075901328274
+ Normed ED: 0.12822349570200572
+ Normed ED: 0.551022701730726
+ Normed ED: 0.5625544899738448
+ Normed ED: 0.7140634943081383
+ Normed ED: 0.526896699528504
+Pushing model to the hub, epoch 4
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+/home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:399: UserWarning: `num_beams` is set to 1. However, `early_stopping` is set to `True` -- this flag is only used in beam-based generation modes. You should set `num_beams>1` or unset `early_stopping`.
+  warnings.warn(
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+ Normed ED: 0.35
+ Normed ED: 0.5879728599312204
+ Normed ED: 0.00683371298405467
+ Normed ED: 0.03056665882906184
+ Normed ED: 0.00507416081186573
+ Normed ED: 0.004132231404958678
+ Normed ED: 0.6609766454352441
+ Normed ED: 0.12457912457912458
+ Normed ED: 0.058227019954203464
+ Normed ED: 0.020735155513666354
+ Normed ED: 0.023898781630740395
+ Normed ED: 0.3673268717516505
+ Normed ED: 0.005495878091431427
+ Normed ED: 0.002420135527589545
+ Normed ED: 0.003006012024048096
+ Normed ED: 0.004994450610432853
+ Normed ED: 0.01804757998359311
+ Normed ED: 0.1009695753928452
+ Normed ED: 0.14919272430002042
+ Normed ED: 0.18721641349378576
+ Normed ED: 0.06376479572355861
+ Normed ED: 0.009060955518945634
+ Normed ED: 0.8035354552780016
+ Normed ED: 0.04381290704558911
+ Normed ED: 0.2214765100671141
+ Normed ED: 0.676056338028169
+ Normed ED: 0.08130699088145897
+ Normed ED: 0.3290441176470588
+ Normed ED: 0.0030075187969924814
+ Normed ED: 0.00364741641337386
+ Normed ED: 0.20394088669950738
+ Normed ED: 0.16752475247524753
+ Normed ED: 0.019122257053291535
+ Normed ED: 0.011065006915629323
+ Normed ED: 0.507799954117917
+ Normed ED: 0.43676953381483913
+ Normed ED: 0.00725733293014817
+ Normed ED: 0.8923233526987437
+ Normed ED: 0.011861313868613138
+ Normed ED: 0.01289134438305709
+ Normed ED: 0.587370531239559
+ Normed ED: 0.05081114172023263
+ Normed ED: 0.005379557680812911
+ Normed ED: 0.014010507880910683
+ Normed ED: 0.23624288425047438
+ Normed ED: 0.008954154727793696
+ Normed ED: 0.5219150370869858
+ Normed ED: 0.5639712292938099
+ Normed ED: 0.7132857243866224
+ Normed ED: 0.5278611230175739
+Pushing model to the hub, epoch 5
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+/home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:399: UserWarning: `num_beams` is set to 1. However, `early_stopping` is set to `True` -- this flag is only used in beam-based generation modes. You should set `num_beams>1` or unset `early_stopping`.
+  warnings.warn(
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+ Normed ED: 0.21405521692362853
+ Normed ED: 0.5823961334696534
+ Normed ED: 0.005315110098709187
+ Normed ED: 0.03338819656712909
+ Normed ED: 0.005078125
+ Normed ED: 0.002753872633390706
+ Normed ED: 0.6576645435244162
+ Normed ED: 0.014997581035316884
+ Normed ED: 0.005561007523716062
+ Normed ED: 0.010396975425330813
+ Normed ED: 0.03279445727482679
+ Normed ED: 0.36774827925270404
+ Normed ED: 0.03305785123966942
+ Normed ED: 0.002904162633107454
+ Normed ED: 0.003006012024048096
+ Normed ED: 0.11353495290034706
+ Normed ED: 0.08349301943607994
+ Normed ED: 0.10297559344700769
+ Normed ED: 0.15450643776824036
+ Normed ED: 0.17893075557309135
+ Normed ED: 0.18693427784336875
+ Normed ED: 0.009060955518945634
+ Normed ED: 0.7927578565672845
+ Normed ED: 0.0
+ Normed ED: 0.2118041847611528
+ Normed ED: 0.028749028749028748
+ Normed ED: 0.0243161094224924
+ Normed ED: 0.32889093137254904
+ Normed ED: 0.002631578947368421
+ Normed ED: 0.0030413625304136255
+ Normed ED: 0.18463054187192118
+ Normed ED: 0.16554455445544555
+ Normed ED: 0.01974921630094044
+ Normed ED: 0.009681881051175657
+ Normed ED: 0.509176416609314
+ Normed ED: 0.4359816152330926
+ Normed ED: 0.006055101422948834
+ Normed ED: 0.892273697800288
+ Normed ED: 0.017304189435336976
+ Normed ED: 0.01289134438305709
+ Normed ED: 0.27183833116036504
+ Normed ED: 0.17819067925677734
+ Normed ED: 0.002988643156007173
+ Normed ED: 0.018027040560841263
+ Normed ED: 0.017710309930423784
+ Normed ED: 0.12786532951289398
+ Normed ED: 0.5338278264778602
+ Normed ED: 0.5625544899738448
+ Normed ED: 0.7135685498126282
+ Normed ED: 0.5278611230175739
+Pushing model to the hub, epoch 6
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+/home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:399: UserWarning: `num_beams` is set to 1. However, `early_stopping` is set to `True` -- this flag is only used in beam-based generation modes. You should set `num_beams>1` or unset `early_stopping`.
+  warnings.warn(
+ Normed ED: 0.18243972652033105
+ Normed ED: 0.5846268240542801
+ Normed ED: 0.006074411541381929
+ Normed ED: 0.031507171408417585
+ Normed ED: 0.009738994935722634
+ Normed ED: 0.0030991735537190084
+ Normed ED: 0.6621656050955415
+ Normed ED: 0.013062409288824383
+ Normed ED: 0.005559189012426423
+ Normed ED: 0.012287334593572778
+ Normed ED: 0.016408813877168308
+ Normed ED: 0.3666245259165613
+ Normed ED: 0.031363967906637494
+ Normed ED: 0.002904162633107454
+ Normed ED: 0.003006012024048096
+ Normed ED: 0.0044444444444444444
+ Normed ED: 0.08321927183137147
+ Normed ED: 0.009015025041736227
+ Normed ED: 0.15144083384426732
+ Normed ED: 0.1874136910633261
+ Normed ED: 0.022700587084148727
+ Normed ED: 0.007413509060955519
+ Normed ED: 0.7930096696212732
+ Normed ED: 0.0
+ Normed ED: 0.22443742597710226
+ Normed ED: 0.027972027972027972
+ Normed ED: 0.20170454545454544
+ Normed ED: 0.3284313725490196
+ Normed ED: 0.0030075187969924814
+ Normed ED: 0.00364741641337386
+ Normed ED: 0.20394088669950738
+ Normed ED: 0.16415841584158417
+ Normed ED: 0.016300940438871474
+ Normed ED: 0.008298755186721992
+ Normed ED: 0.5059646707960541
+ Normed ED: 0.43624425476034145
+ Normed ED: 0.006660611565243718
+ Normed ED: 0.8918019762649585
+ Normed ED: 0.014598540145985401
+ Normed ED: 0.01289134438305709
+ Normed ED: 0.1522610188895249
+ Normed ED: 0.4332359968144412
+ Normed ED: 0.006571087216248507
+ Normed ED: 0.05712902444928589
+ Normed ED: 0.08119279598464718
+ Normed ED: 0.0060888252148997134
+ Normed ED: 0.5679928073724433
+ Normed ED: 0.5657149084568439
+ Normed ED: 0.7151947960121615
+ Normed ED: 0.5286112301757394
+Pushing model to the hub, epoch 7
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+/home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:399: UserWarning: `num_beams` is set to 1. However, `early_stopping` is set to `True` -- this flag is only used in beam-based generation modes. You should set `num_beams>1` or unset `early_stopping`.
+  warnings.warn(
+ Normed ED: 0.35633626097867
+ Normed ED: 0.5814666790593921
+ Normed ED: 0.006074411541381929
+ Normed ED: 0.031742299553256526
+ Normed ED: 0.00624512099921936
+ Normed ED: 0.004132231404958678
+ Normed ED: 0.659447983014862
+ Normed ED: 0.13836477987421383
+ Normed ED: 0.09126594700686948
+ Normed ED: 0.010396975425330813
+ Normed ED: 0.009376465072667605
+ Normed ED: 0.36465795757831154
+ Normed ED: 0.0047488127968008
+ Normed ED: 0.005808325266214908
+ Normed ED: 0.002506265664160401
+ Normed ED: 0.0038888888888888888
+ Normed ED: 0.1541199014508623
+ Normed ED: 0.10063523905048478
+ Normed ED: 0.1512364602493358
+ Normed ED: 0.192542907871375
+ Normed ED: 0.020735524256651018
+ Normed ED: 0.007413509060955519
+ Normed ED: 0.7930096696212732
+ Normed ED: 0.0
+ Normed ED: 0.21891038294512435
+ Normed ED: 0.032507739938080496
+ Normed ED: 0.013646702047005308
+ Normed ED: 0.32705269607843135
+ Normed ED: 0.002631578947368421
+ Normed ED: 0.004857316332726169
+ Normed ED: 0.19073891625615763
+ Normed ED: 0.17287128712871286
+ Normed ED: 0.01818181818181818
+ Normed ED: 0.007373271889400922
+ Normed ED: 0.5047029135122735
+ Normed ED: 0.43755745239658567
+ Normed ED: 0.0066565809379727685
+ Normed ED: 0.8927205918863896
+ Normed ED: 0.012773722627737226
+ Normed ED: 0.016574585635359115
+ Normed ED: 0.17535853976531943
+ Normed ED: 0.1236608509335782
+ Normed ED: 0.00358530026889752
+ Normed ED: 0.017543859649122806
+ Normed ED: 0.01706700379266751
+ Normed ED: 0.1937679083094556
+ Normed ED: 0.5561924027871432
+ Normed ED: 0.5664777680906713
+ Normed ED: 0.7150533832991586
+ Normed ED: 0.5285040720102872
+Pushing model to the hub, epoch 8
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+/home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:399: UserWarning: `num_beams` is set to 1. However, `early_stopping` is set to `True` -- this flag is only used in beam-based generation modes. You should set `num_beams>1` or unset `early_stopping`.
+  warnings.warn(
+ Normed ED: 0.22418047232992597
+ Normed ED: 0.5812807881773399
+ Normed ED: 0.006828528072837633
+ Normed ED: 0.031036915118739714
+ Normed ED: 0.00312256049960968
+ Normed ED: 0.002753872633390706
+ Normed ED: 0.6574097664543525
+ Normed ED: 0.14721485411140584
+ Normed ED: 0.002289077828646174
+ Normed ED: 0.010396975425330813
+ Normed ED: 0.16342721142403807
+ Normed ED: 0.36030341340075855
+ Normed ED: 0.03074231442139465
+ Normed ED: 0.002904162633107454
+ Normed ED: 0.002506265664160401
+ Normed ED: 0.004997223764575236
+ Normed ED: 0.07993430057486997
+ Normed ED: 0.008350033400133601
+ Normed ED: 0.15103208665440426
+ Normed ED: 0.19076740974551193
+ Normed ED: 0.018890200708382526
+ Normed ED: 0.01400329489291598
+ Normed ED: 0.7929593070104755
+ Normed ED: 0.0
+ Normed ED: 0.22443742597710226
+ Normed ED: 0.07511045655375552
+ Normed ED: 0.016717325227963525
+ Normed ED: 0.328125
+ Normed ED: 0.002255639097744361
+ Normed ED: 0.004257907542579075
+ Normed ED: 0.19330049261083743
+ Normed ED: 0.16673267326732674
+ Normed ED: 0.017241379310344827
+ Normed ED: 0.005532503457814661
+ Normed ED: 0.5103234686854783
+ Normed ED: 0.4380827314510834
+ Normed ED: 0.006055101422948834
+ Normed ED: 0.8923730075971995
+ Normed ED: 0.011861313868613138
+ Normed ED: 0.013812154696132596
+ Normed ED: 0.028683181225554105
+ Normed ED: 0.03613018811585548
+ Normed ED: 0.0032865252464893933
+ Normed ED: 0.014521782674011016
+ Normed ED: 0.015807777426493835
+ Normed ED: 0.12464183381088825
+ Normed ED: 0.5216902674758372
+ Normed ED: 0.5621185701830863
+ Normed ED: 0.7134978434561267
+ Normed ED: 0.5285040720102872
+Pushing model to the hub, epoch 9
+Pushing model to the hub after training
+`Trainer.fit` stopped: `max_epochs=10` reached.
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+ERROR: unknown command "import"
+Note: you may need to restart the kernel to use updated packages.
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Collecting donut-python
+  Downloading donut_python-1.0.9-py3-none-any.whl (21 kB)
+Requirement already satisfied: transformers>=4.11.3 in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from donut-python) (4.32.1)
+Requirement already satisfied: timm in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from donut-python) (0.5.4)
+Requirement already satisfied: datasets[vision] in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from donut-python) (2.14.4)
+Requirement already satisfied: pytorch-lightning>=1.6.4 in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from donut-python) (2.0.8)
+Requirement already satisfied: nltk in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from donut-python) (3.8.1)
+Requirement already satisfied: sentencepiece in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from donut-python) (0.1.99)
+Requirement already satisfied: zss in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from donut-python) (1.2.0)
+Requirement already satisfied: sconf>=0.2.3 in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from donut-python) (0.2.5)
+Requirement already satisfied: numpy>=1.17.2 in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from pytorch-lightning>=1.6.4->donut-python) (1.24.1)
+Requirement already satisfied: torch>=1.11.0 in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from pytorch-lightning>=1.6.4->donut-python) (2.0.1+cu118)
+Requirement already satisfied: tqdm>=4.57.0 in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from pytorch-lightning>=1.6.4->donut-python) (4.66.1)
+Requirement already satisfied: PyYAML>=5.4 in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from pytorch-lightning>=1.6.4->donut-python) (6.0.1)
+Requirement already satisfied: fsspec[http]>2021.06.0 in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from pytorch-lightning>=1.6.4->donut-python) (2023.6.0)
+Requirement already satisfied: torchmetrics>=0.7.0 in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from pytorch-lightning>=1.6.4->donut-python) (1.1.1)
+Requirement already satisfied: packaging>=17.1 in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from pytorch-lightning>=1.6.4->donut-python) (22.0)
+Requirement already satisfied: typing-extensions>=4.0.0 in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from pytorch-lightning>=1.6.4->donut-python) (4.4.0)
+Requirement already satisfied: lightning-utilities>=0.7.0 in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from pytorch-lightning>=1.6.4->donut-python) (0.9.0)
+Requirement already satisfied: ruamel.yaml in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from sconf>=0.2.3->donut-python) (0.17.32)
+Requirement already satisfied: munch in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from sconf>=0.2.3->donut-python) (4.0.0)
+Requirement already satisfied: filelock in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from transformers>=4.11.3->donut-python) (3.9.0)
+Requirement already satisfied: huggingface-hub<1.0,>=0.15.1 in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from transformers>=4.11.3->donut-python) (0.16.4)
+Requirement already satisfied: regex!=2019.12.17 in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from transformers>=4.11.3->donut-python) (2023.8.8)
+Requirement already satisfied: requests in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from transformers>=4.11.3->donut-python) (2.28.1)
+Requirement already satisfied: tokenizers!=0.11.3,<0.14,>=0.11.1 in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from transformers>=4.11.3->donut-python) (0.13.3)
+Requirement already satisfied: safetensors>=0.3.1 in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from transformers>=4.11.3->donut-python) (0.3.3)
+Requirement already satisfied: pyarrow>=8.0.0 in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from datasets[vision]->donut-python) (13.0.0)
+Requirement already satisfied: dill<0.3.8,>=0.3.0 in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from datasets[vision]->donut-python) (0.3.7)
+Requirement already satisfied: pandas in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from datasets[vision]->donut-python) (2.1.0)
+Requirement already satisfied: xxhash in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from datasets[vision]->donut-python) (3.3.0)
+Requirement already satisfied: multiprocess in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from datasets[vision]->donut-python) (0.70.15)
+Requirement already satisfied: aiohttp in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from datasets[vision]->donut-python) (3.8.5)
+Requirement already satisfied: Pillow>=6.2.1 in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from datasets[vision]->donut-python) (9.3.0)
+Requirement already satisfied: click in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from nltk->donut-python) (8.1.7)
+Requirement already satisfied: joblib in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from nltk->donut-python) (1.3.2)
+Requirement already satisfied: torchvision in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from timm->donut-python) (0.15.2+cu118)
+Requirement already satisfied: six in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from zss->donut-python) (1.16.0)
+Requirement already satisfied: attrs>=17.3.0 in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from aiohttp->datasets[vision]->donut-python) (22.1.0)
+Requirement already satisfied: charset-normalizer<4.0,>=2.0 in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from aiohttp->datasets[vision]->donut-python) (2.0.4)
+Requirement already satisfied: multidict<7.0,>=4.5 in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from aiohttp->datasets[vision]->donut-python) (6.0.4)
+Requirement already satisfied: async-timeout<5.0,>=4.0.0a3 in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from aiohttp->datasets[vision]->donut-python) (4.0.3)
+Requirement already satisfied: yarl<2.0,>=1.0 in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from aiohttp->datasets[vision]->donut-python) (1.9.2)
+Requirement already satisfied: frozenlist>=1.1.1 in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from aiohttp->datasets[vision]->donut-python) (1.4.0)
+Requirement already satisfied: aiosignal>=1.1.2 in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from aiohttp->datasets[vision]->donut-python) (1.3.1)
+Requirement already satisfied: idna<4,>=2.5 in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from requests->transformers>=4.11.3->donut-python) (3.4)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from requests->transformers>=4.11.3->donut-python) (1.26.14)
+Requirement already satisfied: certifi>=2017.4.17 in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from requests->transformers>=4.11.3->donut-python) (2023.7.22)
+Requirement already satisfied: sympy in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from torch>=1.11.0->pytorch-lightning>=1.6.4->donut-python) (1.11.1)
+Requirement already satisfied: networkx in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from torch>=1.11.0->pytorch-lightning>=1.6.4->donut-python) (3.0)
+Requirement already satisfied: jinja2 in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from torch>=1.11.0->pytorch-lightning>=1.6.4->donut-python) (3.1.2)
+Requirement already satisfied: triton==2.0.0 in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from torch>=1.11.0->pytorch-lightning>=1.6.4->donut-python) (2.0.0)
+Requirement already satisfied: cmake in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from triton==2.0.0->torch>=1.11.0->pytorch-lightning>=1.6.4->donut-python) (3.25.0)
+Requirement already satisfied: lit in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from triton==2.0.0->torch>=1.11.0->pytorch-lightning>=1.6.4->donut-python) (15.0.7)
+Requirement already satisfied: python-dateutil>=2.8.2 in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from pandas->datasets[vision]->donut-python) (2.8.2)
+Requirement already satisfied: pytz>=2020.1 in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from pandas->datasets[vision]->donut-python) (2022.7)
+Requirement already satisfied: tzdata>=2022.1 in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from pandas->datasets[vision]->donut-python) (2023.3)
+Requirement already satisfied: ruamel.yaml.clib>=0.2.7 in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from ruamel.yaml->sconf>=0.2.3->donut-python) (0.2.7)
+Requirement already satisfied: MarkupSafe>=2.0 in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from jinja2->torch>=1.11.0->pytorch-lightning>=1.6.4->donut-python) (2.1.1)
+Requirement already satisfied: mpmath>=0.19 in /home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages (from sympy->torch>=1.11.0->pytorch-lightning>=1.6.4->donut-python) (1.2.1)
+Installing collected packages: donut-python
+Successfully installed donut-python-1.0.9
+Note: you may need to restart the kernel to use updated packages.
+/home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:399: UserWarning: `num_beams` is set to 1. However, `early_stopping` is set to `True` -- this flag is only used in beam-based generation modes. You should set `num_beams>1` or unset `early_stopping`.
+  warnings.warn(
+{'accuracies': [0.47099447513812154, 0.6638801811215604, 0.9829867674858223, 0.9747956403269755, 0.983132530120482, 0.9858012170385395, 0.5423088107007852, 0.6801112656467316, 0.9869739478957916, 0.975929978118162, 0.9263024142312579, 0.7724277749619868, 0.9458740017746229, 0.9706840390879479, 0.9867452135493373, 0.9797507788161994, 0.8912363067292645, 0.9733944954128441, 0.9733688415446072, 0.9665404040404041, 0.9324009324009324, 0.9640591966173362, 0.39853938445487747, 0.971764705882353, 0.9539385847797063, 0.8997995991983968, 0.9583333333333334, 0.9650969529085872, 0.9911504424778761, 0.9849749582637729, 0.9813384813384813, 0.8652714192282538, 0.9474169741697417, 0.9680696661828737, 0.6819230769230769, 0.5888412017167381, 0.9663157894736842, 0.1867491809246451, 0.9676616915422885, 0.9642857142857143, 0.9272727272727272, 0.9226713532513181, 0.9837786259541985, 0.9474548440065681, 0.9525065963060686, 0.8718783930510314, 0.7854365500176741, 0.695040710584752, 0.4786096256684492, 0.7899924184988628], 'mean_accuracy': 0.8625162442891152} length : 50
