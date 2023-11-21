@@ -1,0 +1,2885 @@
+/home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages/lightning_fabric/connector.py:554: UserWarning: 16 is supported for historical reasons but its usage is discouraged. Please set your precision to 16-mixed instead!
+  rank_zero_warn(
+Using 16bit Automatic Mixed Precision (AMP)
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+You are using a CUDA device ('NVIDIA GeForce RTX 3090') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+  | Name  | Type                      | Params
+----------------------------------------------------
+0 | model | VisionEncoderDecoderModel | 201 M
+----------------------------------------------------
+201 M     Trainable params
+0         Non-trainable params
+201 M     Total params
+807.461   Total estimated model params size (MB)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+/home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages/transformers/generation/utils.py:1411: UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed soon, in a future version. Please use a generation configuration file (see https://huggingface.co/docs/transformers/main_classes/text_generation )
+  warnings.warn(
+/home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:399: UserWarning: `num_beams` is set to 1. However, `early_stopping` is set to `True` -- this flag is only used in beam-based generation modes. You should set `num_beams>1` or unset `early_stopping`.
+  warnings.warn(
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+/home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages/pytorch_lightning/utilities/data.py:76: UserWarning: Trying to infer the `batch_size` from an ambiguous collection. The batch size we found is 1. To avoid any miscalculations, use `self.log(..., batch_size=batch_size)`.
+  warning_cache.warn(
+ Normed ED: 0.7749529190207156
+ Normed ED: 0.35509045760908126
+ Normed ED: 0.34321223709369025
+ Normed ED: 0.4468864468864469
+ Normed ED: 0.43560770679414745
+ Normed ED: 0.43137748677914883
+ Normed ED: 0.45806861499364676
+ Normed ED: 0.24890609222484011
+ Normed ED: 0.2792391744233104
+ Normed ED: 0.7886301026796895
+ Normed ED: 0.2804182509505703
+ Normed ED: 0.2948051948051948
+ Normed ED: 0.229187868919194
+ Normed ED: 0.32249606712113266
+ Normed ED: 0.2887130075705437
+ Normed ED: 0.3814199395770393
+ Normed ED: 0.37694444444444447
+ Normed ED: 0.07909238249594813
+ Normed ED: 0.10573382430299842
+ Normed ED: 0.2006590992310509
+ Normed ED: 0.37511931275851096
+ Normed ED: 0.7991257599356881
+ Normed ED: 0.46624305003971406
+ Normed ED: 0.07674236491777604
+ Normed ED: 0.5858252427184466
+ Normed ED: 0.1809805857189865
+ Normed ED: 0.32388663967611336
+ Normed ED: 0.2549019607843137
+ Normed ED: 0.37390542907180385
+ Normed ED: 0.5671232876712329
+ Normed ED: 0.5435592825529932
+ Normed ED: 0.721159179145868
+ Normed ED: 0.7584591358667361
+ Normed ED: 0.12143867447969287
+ Normed ED: 0.4401395290893235
+ Normed ED: 0.3088181485547018
+ Normed ED: 0.2460345435318999
+ Normed ED: 0.0033653846153846156
+ Normed ED: 0.08431703204047218
+ Normed ED: 0.23226288274831963
+ Normed ED: 0.2523629489603025
+ Normed ED: 0.45476673427991887
+ Normed ED: 0.1650114591291062
+ Normed ED: 0.6305356389708984
+ Normed ED: 0.6391851026579659
+ Normed ED: 0.09384033800311319
+ Normed ED: 0.5711848341232227
+ Normed ED: 0.2754362858083635
+ Normed ED: 0.1709579704657327
+ Normed ED: 0.6012190616919099
+ Normed ED: 0.6535176269607081
+ Normed ED: 0.018072289156626505
+ Normed ED: 0.29109697933227346
+ Normed ED: 0.27369980250164583
+ Normed ED: 0.5766340024735991
+ Normed ED: 0.008234217749313814
+ Normed ED: 0.0055147058823529415
+ Normed ED: 0.0018198362147406734
+ Normed ED: 0.008226691042047532
+ Normed ED: 0.0027522935779816515
+ Normed ED: 0.0027881040892193307
+ Normed ED: 0.001834862385321101
+ Normed ED: 0.0018231540565177757
+ Normed ED: 0.004562043795620438
+ Normed ED: 0.0018535681186283596
+ Normed ED: 0.0018365472910927456
+ Normed ED: 0.008249312557286892
+ Normed ED: 0.004591368227731864
+ Normed ED: 0.0036968576709796672
+ Normed ED: 0.0018484288354898336
+ Normed ED: 0.003686635944700461
+ Normed ED: 0.001841620626151013
+ Normed ED: 0.0036363636363636364
+ Normed ED: 0.0036463081130355514
+ Normed ED: 0.0018315018315018315
+ Normed ED: 0.0027649769585253456
+ Normed ED: 0.0027472527472527475
+ Normed ED: 0.009099181073703366
+ Normed ED: 0.0027548209366391185
+ Normed ED: 0.003686635944700461
+ Normed ED: 0.0037002775208140612
+ Normed ED: 0.003663003663003663
+ Normed ED: 0.0027522935779816515
+ Normed ED: 0.003669724770642202
+ Normed ED: 0.004604051565377533
+ Normed ED: 0.002742230347349177
+ Normed ED: 0.0018148820326678765
+ Normed ED: 0.0018281535648994515
+ Normed ED: 0.002749770852428964
+ Normed ED: 0.00641025641025641
+ Normed ED: 0.006369426751592357
+ Normed ED: 0.002749770852428964
+ Normed ED: 0.0027347310847766638
+ Normed ED: 0.0055248618784530384
+ Normed ED: 0.1281844998659158
+ Normed ED: 0.004585243851604835
+ Normed ED: 0.0024180548092423426
+ Normed ED: 0.0024096385542168677
+ Normed ED: 0.00407185628742515
+ Normed ED: 0.08821621621621621
+ Normed ED: 0.006025911419102139
+ Normed ED: 0.0049833887043189366
+ Normed ED: 0.005057226510513707
+ Normed ED: 0.20221660509430295
+ Normed ED: 0.03387438249823571
+ Normed ED: 0.20491962037575054
+ Normed ED: 0.42771285475792986
+ Normed ED: 0.14954834392773503
+ Normed ED: 0.07942583732057416
+ Normed ED: 0.02164009111617312
+ Normed ED: 0.01478953356086462
+ Normed ED: 0.021336680263570756
+ Normed ED: 0.018279231011660887
+ Normed ED: 0.03005259203606311
+ Normed ED: 0.8286340852130326
+ Normed ED: 0.014823261117445839
+ Normed ED: 0.15851759576455932
+ Normed ED: 0.01471698113207547
+ Normed ED: 0.022485946283572766
+ Normed ED: 0.01134572959344469
+ Normed ED: 0.022884012539184952
+ Normed ED: 0.013199245757385292
+ Normed ED: 0.015377222489187891
+ Normed ED: 0.023906888958792075
+ Normed ED: 0.014823261117445839
+ Normed ED: 0.14767932489451477
+ Normed ED: 0.2191625801584308
+ Normed ED: 0.683130517776187
+ Normed ED: 0.43343653250773995
+ Normed ED: 0.21050576059363404
+ Normed ED: 0.8473214943629799
+ Normed ED: 0.5734747430570741
+ Normed ED: 0.0033030553261767133
+ Normed ED: 0.0
+ Normed ED: 0.20456178160919541
+ Normed ED: 0.00033422459893048126
+ Normed ED: 0.003966402239850677
+ Normed ED: 0.0
+ Normed ED: 0.0006695681285570807
+ Normed ED: 0.0035120580660266917
+ Normed ED: 0.0
+ Normed ED: 0.00033400133600534405
+ Normed ED: 0.1996415770609319
+ Normed ED: 0.000591016548463357
+ Normed ED: 0.0005920663114268798
+ Normed ED: 0.005494505494505495
+ Normed ED: 0.06779315960912052
+ Normed ED: 0.08554632069734441
+ Normed ED: 0.07873376623376624
+ Normed ED: 0.0025700934579439253
+ Normed ED: 0.0770478507704785
+ Normed ED: 0.0013386880856760374
+ Normed ED: 0.0
+ Normed ED: 0.007503949447077409
+ Normed ED: 0.009657836644591612
+ Normed ED: 0.005924170616113744
+ Normed ED: 0.0066518847006651885
+ Normed ED: 0.007732670533001933
+ Normed ED: 0.006067291781577496
+ Normed ED: 0.004150525733259546
+ Normed ED: 0.09463548830811554
+ Normed ED: 0.004332414336352895
+ Normed ED: 0.004329004329004329
+ Normed ED: 0.006764822920811779
+ Normed ED: 0.006640841173215274
+ Normed ED: 0.006930967563071805
+ Normed ED: 0.0035700119000396666
+ Normed ED: 0.016581129095933674
+ Normed ED: 0.006934812760055479
+ Normed ED: 0.005931198102016607
+ Normed ED: 0.0063518365092515875
+ Normed ED: 0.04667081518357187
+ Normed ED: 0.00858034321372855
+ Normed ED: 0.03476245654692932
+ Normed ED: 0.167420814479638
+ Normed ED: 0.07325581395348837
+ Normed ED: 0.23974763406940064
+ Normed ED: 0.4645115952213633
+ Normed ED: 0.13931656027037176
+ Normed ED: 0.15016251354279522
+ Normed ED: 0.2035002035002035
+ Normed ED: 0.14008881711748083
+ Normed ED: 0.4895020188425303
+ Normed ED: 0.19013409961685823
+ Normed ED: 0.22699386503067484
+ Normed ED: 0.156120826709062
+ Normed ED: 0.5455459930703029
+ Normed ED: 0.5828947368421052
+ Normed ED: 0.407200587803086
+ Normed ED: 0.14632683658170914
+ Normed ED: 0.591655266757866
+ Normed ED: 0.14227504244482173
+ Normed ED: 0.1780653111521873
+ Normed ED: 0.1614294516327788
+ Normed ED: 0.2314390467461045
+ Normed ED: 0.2474074074074074
+ Normed ED: 0.24395448079658605
+ Normed ED: 0.176313446126447
+ Normed ED: 0.33756345177664976
+ Normed ED: 0.283989092325672
+ Normed ED: 0.18527315914489312
+ Normed ED: 0.48228396635228143
+ Normed ED: 0.17409470752089137
+ Normed ED: 0.3699215965787598
+ Normed ED: 0.14858737356121382
+ Normed ED: 0.013282732447817837
+ Normed ED: 0.8219222770460384
+ Normed ED: 0.6296489398679179
+ Normed ED: 0.8366536848412223
+ Normed ED: 0.8685129440096327
+ Normed ED: 0.31006549465701483
+ Normed ED: 0.23496932515337424
+ Normed ED: 0.18307622504537205
+ Normed ED: 0.6004077471967381
+ Normed ED: 0.5697755960729313
+ Normed ED: 0.09467835007480231
+ Normed ED: 0.2845786963434022
+ Normed ED: 0.18403361344537816
+ Normed ED: 0.08555226824457594
+ Normed ED: 0.06676706827309237
+ Normed ED: 0.05254569190600522
+ Normed ED: 0.23598225090762404
+ Normed ED: 0.2334363199450738
+ Normed ED: 0.8185354691075515
+ Normed ED: 0.5298274064635701
+ Normed ED: 0.5173261243548783
+ Normed ED: 0.5386100386100386
+ Normed ED: 0.2652380115931846
+ Normed ED: 0.19265463917525774
+ Normed ED: 0.29638458482320224
+ Normed ED: 0.06183115338882283
+ Normed ED: 0.3175876411170529
+ Normed ED: 0.044070512820512824
+ Normed ED: 0.7341586369727522
+ Normed ED: 0.3687593423019432
+ Normed ED: 0.7345862796179135
+ Normed ED: 0.7977632350068373
+ Normed ED: 0.7384803588419193
+ Normed ED: 0.012864169504351116
+ Normed ED: 0.06952169076751946
+ Normed ED: 0.05464895635673624
+ Normed ED: 0.45056164193593123
+ Normed ED: 0.2727111426543648
+ Normed ED: 0.2910606598084427
+ Normed ED: 0.053057553956834536
+ Normed ED: 0.5036355373778687
+ Normed ED: 0.09504550050556117
+ Normed ED: 0.3006611570247934
+ Normed ED: 0.01970108695652174
+ Normed ED: 0.3241590214067278
+Pushing model to the hub, epoch 0
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+/home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:399: UserWarning: `num_beams` is set to 1. However, `early_stopping` is set to `True` -- this flag is only used in beam-based generation modes. You should set `num_beams>1` or unset `early_stopping`.
+  warnings.warn(
+ Normed ED: 0.4274952919020716
+ Normed ED: 0.32245681381957775
+ Normed ED: 0.06993642143505904
+ Normed ED: 0.39473684210526316
+ Normed ED: 0.4340141967260611
+ Normed ED: 0.25157391085368924
+ Normed ED: 0.6919530595138307
+ Normed ED: 0.2724671827667452
+ Normed ED: 0.30945785516422636
+ Normed ED: 0.7825520833333334
+ Normed ED: 0.2923954372623574
+ Normed ED: 0.4736495388669302
+ Normed ED: 0.1966212090372481
+ Normed ED: 0.4843283582089552
+ Normed ED: 0.26479697178251893
+ Normed ED: 0.005287009063444109
+ Normed ED: 0.3497222222222222
+ Normed ED: 0.023952095808383235
+ Normed ED: 0.01262493424513414
+ Normed ED: 0.04708171206225681
+ Normed ED: 0.40120903595291124
+ Normed ED: 0.8050042707129579
+ Normed ED: 0.4169976171564734
+ Normed ED: 0.0005303632988597189
+ Normed ED: 0.5742718446601942
+ Normed ED: 0.17439947351102336
+ Normed ED: 0.009514747859181731
+ Normed ED: 0.3094919786096257
+ Normed ED: 0.01881467544684854
+ Normed ED: 0.013245033112582781
+ Normed ED: 0.5303983228511531
+ Normed ED: 0.7134636716583472
+ Normed ED: 0.020822488287350338
+ Normed ED: 0.08749242271165893
+ Normed ED: 0.4336613927993024
+ Normed ED: 0.2533845590925723
+ Normed ED: 0.2687698272823405
+ Normed ED: 0.0028846153846153848
+ Normed ED: 0.0022484541877459247
+ Normed ED: 0.041448842419716206
+ Normed ED: 0.0033407572383073497
+ Normed ED: 0.47437457741717376
+ Normed ED: 0.014485387547649302
+ Normed ED: 0.6231969633066217
+ Normed ED: 0.6404583797548942
+ Normed ED: 0.012025901942645698
+ Normed ED: 0.5687203791469194
+ Normed ED: 0.28119855120184395
+ Normed ED: 0.1541082923135176
+ Normed ED: 0.5942925748060583
+ Normed ED: 0.6528187606771237
+ Normed ED: 0.013863773357444244
+ Normed ED: 0.3041335453100159
+ Normed ED: 0.26152073732718895
+ Normed ED: 0.5780610788697554
+ Normed ED: 0.007319304666056725
+ Normed ED: 0.004595588235294118
+ Normed ED: 0.00272975432211101
+ Normed ED: 0.006398537477148081
+ Normed ED: 0.0018365472910927456
+ Normed ED: 0.0018604651162790699
+ Normed ED: 0.001834862385321101
+ Normed ED: 0.0027347310847766638
+ Normed ED: 0.002737226277372263
+ Normed ED: 0.0018535681186283596
+ Normed ED: 0.0027522935779816515
+ Normed ED: 0.00458295142071494
+ Normed ED: 0.0027573529411764708
+ Normed ED: 0.0018484288354898336
+ Normed ED: 0.0018484288354898336
+ Normed ED: 0.003686635944700461
+ Normed ED: 0.001841620626151013
+ Normed ED: 0.0018181818181818182
+ Normed ED: 0.0018231540565177757
+ Normed ED: 0.0018315018315018315
+ Normed ED: 0.0018433179723502304
+ Normed ED: 0.0036596523330283625
+ Normed ED: 0.00545950864422202
+ Normed ED: 0.0027522935779816515
+ Normed ED: 0.0018433179723502304
+ Normed ED: 0.0027726432532347504
+ Normed ED: 0.0027472527472527475
+ Normed ED: 0.0027522935779816515
+ Normed ED: 0.0045871559633027525
+ Normed ED: 0.003683241252302026
+ Normed ED: 0.0018281535648994515
+ Normed ED: 0.0018148820326678765
+ Normed ED: 0.0018281535648994515
+ Normed ED: 0.002749770852428964
+ Normed ED: 0.004578754578754579
+ Normed ED: 0.0027272727272727275
+ Normed ED: 0.0018331805682859762
+ Normed ED: 0.00273224043715847
+ Normed ED: 0.005519779208831647
+ Normed ED: 0.032329988851727984
+ Normed ED: 0.0045871559633027525
+ Normed ED: 0.0024180548092423426
+ Normed ED: 0.002108433734939759
+ Normed ED: 0.0038323353293413173
+ Normed ED: 0.08172972972972974
+ Normed ED: 0.005418422636965683
+ Normed ED: 0.003737541528239203
+ Normed ED: 0.002661698163428267
+ Normed ED: 0.1981333851837449
+ Normed ED: 0.02893436838390967
+ Normed ED: 0.20491962037575054
+ Normed ED: 0.21869782971619364
+ Normed ED: 0.09033121445299432
+ Normed ED: 0.14919187733112307
+ Normed ED: 0.016324981017463932
+ Normed ED: 0.012514220705346985
+ Normed ED: 0.011288805268109126
+ Normed ED: 0.011976047904191617
+ Normed ED: 0.012830188679245283
+ Normed ED: 0.16056034482758622
+ Normed ED: 0.12491582491582491
+ Normed ED: 0.01775147928994083
+ Normed ED: 0.017735849056603775
+ Normed ED: 0.009369144284821987
+ Normed ED: 0.014150943396226415
+ Normed ED: 0.019122257053291535
+ Normed ED: 0.0069138906348208675
+ Normed ED: 0.008649687650168188
+ Normed ED: 0.02232704402515723
+ Normed ED: 0.013683010262257697
+ Normed ED: 0.035161744022503515
+ Normed ED: 0.015175718849840255
+ Normed ED: 0.6863914737930485
+ Normed ED: 0.36300309597523217
+ Normed ED: 0.1329818394844757
+ Normed ED: 0.8442266597892565
+ Normed ED: 0.531926525256943
+ Normed ED: 0.0008257638315441783
+ Normed ED: 0.0
+ Normed ED: 0.20330459770114942
+ Normed ED: 0.0
+ Normed ED: 0.003033131124591694
+ Normed ED: 0.0
+ Normed ED: 0.00033478406427854036
+ Normed ED: 0.0011706860220088973
+ Normed ED: 0.0
+ Normed ED: 0.0
+ Normed ED: 0.1989247311827957
+ Normed ED: 0.0005906674542232723
+ Normed ED: 0.000591715976331361
+ Normed ED: 0.003021978021978022
+ Normed ED: 0.07227198697068404
+ Normed ED: 0.08128927630245286
+ Normed ED: 0.07447240259740259
+ Normed ED: 0.000700770847932726
+ Normed ED: 0.07988645579886455
+ Normed ED: 0.001004352192835621
+ Normed ED: 0.0
+ Normed ED: 0.0019747235387045812
+ Normed ED: 0.005794701986754967
+ Normed ED: 0.006714060031595577
+ Normed ED: 0.0047117516629711755
+ Normed ED: 0.006628003314001657
+ Normed ED: 0.004136789851075565
+ Normed ED: 0.002767017155506364
+ Normed ED: 0.0038514442916093533
+ Normed ED: 0.005116096025186935
+ Normed ED: 0.004327301337529505
+ Normed ED: 0.007165605095541401
+ Normed ED: 0.004979253112033195
+ Normed ED: 0.006099251455503188
+ Normed ED: 0.0031733439111463705
+ Normed ED: 0.008685353335965259
+ Normed ED: 0.005547850208044383
+ Normed ED: 0.004349545274812179
+ Normed ED: 0.0063518365092515875
+ Normed ED: 0.005600497822028625
+ Normed ED: 0.005850234009360375
+ Normed ED: 0.002317497103128621
+ Normed ED: 0.00684931506849315
+ Normed ED: 0.012403100775193798
+ Normed ED: 0.0055
+ Normed ED: 0.19153846153846155
+ Normed ED: 0.0022530980097634247
+ Normed ED: 0.05590465872156013
+ Normed ED: 0.12656119900083265
+ Normed ED: 0.19325396825396826
+ Normed ED: 0.49165545087483176
+ Normed ED: 0.024058323207776428
+ Normed ED: 0.013986013986013986
+ Normed ED: 0.08664259927797834
+ Normed ED: 0.5483402257740024
+ Normed ED: 0.5635627530364372
+ Normed ED: 0.3550330639235856
+ Normed ED: 0.05269922879177378
+ Normed ED: 0.585890170021497
+ Normed ED: 0.008755234107346783
+ Normed ED: 0.15095502156500307
+ Normed ED: 0.13185459026494148
+ Normed ED: 0.09136799596163554
+ Normed ED: 0.0658271322266743
+ Normed ED: 0.004603580562659846
+ Normed ED: 0.10707925200356189
+ Normed ED: 0.34775888717156106
+ Normed ED: 0.3069731203739774
+ Normed ED: 0.007914523149980214
+ Normed ED: 0.4710680601580423
+ Normed ED: 0.14623955431754876
+ Normed ED: 0.37619387027797574
+ Normed ED: 0.10661896243291592
+ Normed ED: 0.11624745071380013
+ Normed ED: 0.8224116135872446
+ Normed ED: 0.6276503302050748
+ Normed ED: 0.8366162372678251
+ Normed ED: 0.8687537627934979
+ Normed ED: 0.29110651499482937
+ Normed ED: 0.0799651061355045
+ Normed ED: 0.1572141560798548
+ Normed ED: 0.5024717514124294
+ Normed ED: 0.054677206851119896
+ Normed ED: 0.05172045308826673
+ Normed ED: 0.2859918742271683
+ Normed ED: 0.024091293322062553
+ Normed ED: 0.03437892095357591
+ Normed ED: 0.0030120481927710845
+ Normed ED: 0.00196078431372549
+ Normed ED: 0.0318676885841065
+ Normed ED: 0.0044596912521440825
+ Normed ED: 0.823066361556064
+ Normed ED: 0.48592609753272326
+ Normed ED: 0.46399606782993363
+ Normed ED: 0.5197340197340198
+ Normed ED: 0.23397154400140524
+ Normed ED: 0.019948519948519948
+ Normed ED: 0.005160778086542279
+ Normed ED: 0.004161712247324614
+ Normed ED: 0.04931669637551991
+ Normed ED: 0.001201923076923077
+ Normed ED: 0.7256078106055772
+ Normed ED: 0.34723467862481316
+ Normed ED: 0.7314229003845677
+ Normed ED: 0.7881910529400273
+ Normed ED: 0.731955960309909
+ Normed ED: 0.01021566401816118
+ Normed ED: 0.00389321468298109
+ Normed ED: 0.0015180265654648956
+ Normed ED: 0.43461378449590904
+ Normed ED: 0.2727111426543648
+ Normed ED: 0.2800638524299397
+ Normed ED: 0.04091726618705036
+ Normed ED: 0.4987502840263576
+ Normed ED: 0.0948432760364004
+ Normed ED: 0.27107438016528923
+ Normed ED: 0.001585144927536232
+ Normed ED: 0.2206088992974239
+Pushing model to the hub, epoch 1
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+/home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:399: UserWarning: `num_beams` is set to 1. However, `early_stopping` is set to `True` -- this flag is only used in beam-based generation modes. You should set `num_beams>1` or unset `early_stopping`.
+  warnings.warn(
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+ Normed ED: 0.22645951035781545
+ Normed ED: 0.2685349414686059
+ Normed ED: 0.0124282982791587
+ Normed ED: 0.17699115044247787
+ Normed ED: 0.4153266695639577
+ Normed ED: 0.21950623319481788
+ Normed ED: 0.41768631813125695
+ Normed ED: 0.28189161898350723
+ Normed ED: 0.16066369890732496
+ Normed ED: 0.7890881535741349
+ Normed ED: 0.3425855513307985
+ Normed ED: 0.20948616600790515
+ Normed ED: 0.1754528801139833
+ Normed ED: 0.15145502645502645
+ Normed ED: 0.23021335168616655
+ Normed ED: 0.004528301886792453
+ Normed ED: 0.34958333333333336
+ Normed ED: 0.0013306719893546241
+ Normed ED: 0.010520778537611783
+ Normed ED: 0.05914396887159533
+ Normed ED: 0.43477569201399935
+ Normed ED: 0.8022911118926795
+ Normed ED: 0.41752713794016416
+ Normed ED: 0.0010610079575596816
+ Normed ED: 0.5742718446601942
+ Normed ED: 0.003948667324777887
+ Normed ED: 0.008563273073263558
+ Normed ED: 0.012138188608776844
+ Normed ED: 0.010348071495766699
+ Normed ED: 0.011352885525070956
+ Normed ED: 0.5109480549732122
+ Normed ED: 0.709303937881309
+ Normed ED: 0.01665799062988027
+ Normed ED: 0.09900990099009901
+ Normed ED: 0.4381462563847016
+ Normed ED: 0.24533479692645443
+ Normed ED: 0.2581952767007402
+ Normed ED: 0.002886002886002886
+ Normed ED: 0.002528800224782242
+ Normed ED: 0.041448842419716206
+ Normed ED: 0.11315136476426799
+ Normed ED: 0.44746450304259633
+ Normed ED: 0.0728667305848514
+ Normed ED: 0.6299451708140025
+ Normed ED: 0.6427661944930766
+ Normed ED: 0.09595735228787206
+ Normed ED: 0.5727962085308057
+ Normed ED: 0.2790582811985512
+ Normed ED: 0.13953048087845513
+ Normed ED: 0.6004802364240857
+ Normed ED: 0.6515763317285292
+ Normed ED: 0.014449127031908489
+ Normed ED: 0.28537360890302066
+ Normed ED: 0.26678736010533244
+ Normed ED: 0.5773951098848825
+ Normed ED: 0.0036596523330283625
+ Normed ED: 0.001838235294117647
+ Normed ED: 0.0018198362147406734
+ Normed ED: 0.007312614259597806
+ Normed ED: 0.0018365472910927456
+ Normed ED: 0.0018604651162790699
+ Normed ED: 0.001834862385321101
+ Normed ED: 0.0018231540565177757
+ Normed ED: 0.004562043795620438
+ Normed ED: 0.0018535681186283596
+ Normed ED: 0.0036730945821854912
+ Normed ED: 0.00458295142071494
+ Normed ED: 0.001838235294117647
+ Normed ED: 0.0018484288354898336
+ Normed ED: 0.0018484288354898336
+ Normed ED: 0.003686635944700461
+ Normed ED: 0.001841620626151013
+ Normed ED: 0.0018181818181818182
+ Normed ED: 0.0018231540565177757
+ Normed ED: 0.0018315018315018315
+ Normed ED: 0.0018433179723502304
+ Normed ED: 0.0018315018315018315
+ Normed ED: 0.00272975432211101
+ Normed ED: 0.0018365472910927456
+ Normed ED: 0.0018433179723502304
+ Normed ED: 0.0018501387604070306
+ Normed ED: 0.0018315018315018315
+ Normed ED: 0.0036730945821854912
+ Normed ED: 0.003669724770642202
+ Normed ED: 0.003683241252302026
+ Normed ED: 0.0018281535648994515
+ Normed ED: 0.0018148820326678765
+ Normed ED: 0.0018281535648994515
+ Normed ED: 0.0018331805682859762
+ Normed ED: 0.0018315018315018315
+ Normed ED: 0.0018198362147406734
+ Normed ED: 0.0018331805682859762
+ Normed ED: 0.0018231540565177757
+ Normed ED: 0.0027624309392265192
+ Normed ED: 0.0036231884057971015
+ Normed ED: 0.0029190992493744786
+ Normed ED: 0.0024180548092423426
+ Normed ED: 0.002108433734939759
+ Normed ED: 0.0023952095808383233
+ Normed ED: 0.11048648648648648
+ Normed ED: 0.007532389273877674
+ Normed ED: 0.0033222591362126247
+ Normed ED: 0.002129358530742614
+ Normed ED: 0.1981333851837449
+ Normed ED: 0.029169607151258527
+ Normed ED: 0.20491962037575054
+ Normed ED: 0.09515859766277128
+ Normed ED: 0.1411843425894948
+ Normed ED: 0.015311004784688996
+ Normed ED: 0.013287775246772968
+ Normed ED: 0.012135001896094046
+ Normed ED: 0.008471917163476624
+ Normed ED: 0.012279596977329974
+ Normed ED: 0.011680482290881688
+ Normed ED: 0.0129174543163201
+ Normed ED: 0.007601672367920942
+ Normed ED: 0.016194331983805668
+ Normed ED: 0.01503194287861706
+ Normed ED: 0.00905683947532792
+ Normed ED: 0.009760705289672544
+ Normed ED: 0.009404388714733543
+ Normed ED: 0.005967336683417085
+ Normed ED: 0.008645533141210375
+ Normed ED: 0.022891188460332394
+ Normed ED: 0.012162675788673508
+ Normed ED: 0.006329113924050633
+ Normed ED: 0.010782747603833865
+ Normed ED: 0.7071502425833135
+ Normed ED: 0.0046439628482972135
+ Normed ED: 0.1329818394844757
+ Normed ED: 0.8460688232259966
+ Normed ED: 0.5630876886070413
+ Normed ED: 0.0
+ Normed ED: 0.0
+ Normed ED: 0.20150862068965517
+ Normed ED: 0.0
+ Normed ED: 0.002099860009332711
+ Normed ED: 0.0
+ Normed ED: 0.0
+ Normed ED: 0.0011706860220088973
+ Normed ED: 0.0
+ Normed ED: 0.0
+ Normed ED: 0.1989247311827957
+ Normed ED: 0.000591016548463357
+ Normed ED: 0.000591715976331361
+ Normed ED: 0.002197802197802198
+ Normed ED: 0.06718241042345277
+ Normed ED: 0.088992499493209
+ Normed ED: 0.07487824675324675
+ Normed ED: 0.00023364485981308412
+ Normed ED: 0.07907542579075426
+ Normed ED: 0.0003348961821835231
+ Normed ED: 0.0
+ Normed ED: 0.004339250493096647
+ Normed ED: 0.006072315760419542
+ Normed ED: 0.005529225908372828
+ Normed ED: 0.003878116343490305
+ Normed ED: 0.004692243996687827
+ Normed ED: 0.003861003861003861
+ Normed ED: 0.004700027647221454
+ Normed ED: 0.004671613080516625
+ Normed ED: 0.004720692368214005
+ Normed ED: 0.0035419126328217238
+ Normed ED: 0.0047694753577106515
+ Normed ED: 0.005812344312205923
+ Normed ED: 0.0036031042128603103
+ Normed ED: 0.0031733439111463705
+ Normed ED: 0.010659297275957363
+ Normed ED: 0.004437049362174155
+ Normed ED: 0.00276789244760775
+ Normed ED: 0.005244272702180514
+ Normed ED: 0.00373366521468575
+ Normed ED: 0.006630265210608425
+ Normed ED: 0.002317497103128621
+ Normed ED: 0.003738317757009346
+ Normed ED: 0.008133230054221533
+ Normed ED: 0.0745
+ Normed ED: 0.2153846153846154
+ Normed ED: 0.0011265490048817123
+ Normed ED: 0.04788732394366197
+ Normed ED: 0.01795096322241681
+ Normed ED: 0.006863140896245458
+ Normed ED: 0.4858681022880215
+ Normed ED: 0.016767922235722963
+ Normed ED: 0.016199649737302976
+ Normed ED: 0.015613910574875798
+ Normed ED: 0.532245445400693
+ Normed ED: 0.5740890688259109
+ Normed ED: 0.35282880235121233
+ Normed ED: 0.02602827763496144
+ Normed ED: 0.5875512995896033
+ Normed ED: 0.0026646364674533687
+ Normed ED: 0.003694581280788177
+ Normed ED: 0.17970835900595605
+ Normed ED: 0.009834368530020704
+ Normed ED: 0.0762825678216492
+ Normed ED: 0.0025575447570332483
+ Normed ED: 0.05810329474621549
+ Normed ED: 0.004441624365482234
+ Normed ED: 0.2917802882742501
+ Normed ED: 0.0027711797307996833
+ Normed ED: 0.46851899056844254
+ Normed ED: 0.15041782729805014
+ Normed ED: 0.3726300784034212
+ Normed ED: 0.0035778175313059034
+ Normed ED: 0.00872865275142315
+ Normed ED: 0.8227378379480488
+ Normed ED: 0.6259124087591241
+ Normed ED: 0.8357549430796885
+ Normed ED: 0.8689042745334136
+ Normed ED: 0.27697345742847296
+ Normed ED: 0.03987730061349693
+ Normed ED: 0.1397459165154265
+ Normed ED: 0.053982883475971036
+ Normed ED: 0.2591093117408907
+ Normed ED: 0.05749091686257747
+ Normed ED: 0.24818936583642465
+ Normed ED: 0.014780405405405405
+ Normed ED: 0.0030105368790767687
+ Normed ED: 0.002259036144578313
+ Normed ED: 0.002288329519450801
+ Normed ED: 0.012101653892698669
+ Normed ED: 0.0034328870580157913
+ Normed ED: 0.8155606407322654
+ Normed ED: 0.5092088497625391
+ Normed ED: 0.490661096092406
+ Normed ED: 0.5255255255255256
+ Normed ED: 0.22958018619357104
+ Normed ED: 0.014819587628865979
+ Normed ED: 0.005555555555555556
+ Normed ED: 0.0032699167657550534
+ Normed ED: 0.00267379679144385
+ Normed ED: 0.001201923076923077
+ Normed ED: 0.7256078106055772
+ Normed ED: 0.3508221225710015
+ Normed ED: 0.7314229003845677
+ Normed ED: 0.7881910529400273
+ Normed ED: 0.7275383988038603
+ Normed ED: 0.01021566401816118
+ Normed ED: 0.0033370411568409346
+ Normed ED: 0.0015180265654648956
+ Normed ED: 0.4372486478990431
+ Normed ED: 0.27324343506032645
+ Normed ED: 0.27509755232351896
+ Normed ED: 0.0044964028776978415
+ Normed ED: 0.49693251533742333
+ Normed ED: 0.09383215369059657
+ Normed ED: 0.2679338842975207
+ Normed ED: 0.0020380434782608695
+ Normed ED: 0.09785932721712538
+Pushing model to the hub, epoch 2
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+/home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:399: UserWarning: `num_beams` is set to 1. However, `early_stopping` is set to `True` -- this flag is only used in beam-based generation modes. You should set `num_beams>1` or unset `early_stopping`.
+  warnings.warn(
+ Normed ED: 0.15772128060263654
+ Normed ED: 0.4051081943951756
+ Normed ED: 0.015296367112810707
+ Normed ED: 0.23575949367088608
+ Normed ED: 0.4301028538316674
+ Normed ED: 0.1300172371337109
+ Normed ED: 0.4697738809413936
+ Normed ED: 0.2923258162234938
+ Normed ED: 0.2646701740186159
+ Normed ED: 0.7857661583151779
+ Normed ED: 0.423574144486692
+ Normed ED: 0.2865612648221344
+ Normed ED: 0.1962141257887238
+ Normed ED: 0.33093525179856115
+ Normed ED: 0.2259119064005506
+ Normed ED: 0.05211480362537765
+ Normed ED: 0.3527777777777778
+ Normed ED: 0.00033266799733865603
+ Normed ED: 0.013677012098895318
+ Normed ED: 0.0038910505836575876
+ Normed ED: 0.3612790327712377
+ Normed ED: 0.7973169873888358
+ Normed ED: 0.4158061953931692
+ Normed ED: 0.004244031830238726
+ Normed ED: 0.5738834951456311
+ Normed ED: 0.002631578947368421
+ Normed ED: 0.008563273073263558
+ Normed ED: 0.011204481792717087
+ Normed ED: 0.008466603951081843
+ Normed ED: 0.010387157695939566
+ Normed ED: 0.5121127416724901
+ Normed ED: 0.7098585690515807
+ Normed ED: 0.01665799062988027
+ Normed ED: 0.09032127702566176
+ Normed ED: 0.43528092687180764
+ Normed ED: 0.2500914745700695
+ Normed ED: 0.225237927388086
+ Normed ED: 0.001924001924001924
+ Normed ED: 0.0016863406408094434
+ Normed ED: 0.041448842419716206
+ Normed ED: 0.0033407572383073497
+ Normed ED: 0.4764029749830967
+ Normed ED: 0.006620830150241915
+ Normed ED: 0.6227752003374104
+ Normed ED: 0.6402992201177782
+ Normed ED: 0.01179463459759482
+ Normed ED: 0.5690995260663507
+ Normed ED: 0.27510701350016464
+ Normed ED: 0.1410450586898902
+ Normed ED: 0.596786110084965
+ Normed ED: 0.6520422425842523
+ Normed ED: 0.004250151791135397
+ Normed ED: 0.28521462639109696
+ Normed ED: 0.26398946675444374
+ Normed ED: 0.5756826182094948
+ Normed ED: 0.0036596523330283625
+ Normed ED: 0.003676470588235294
+ Normed ED: 0.0018198362147406734
+ Normed ED: 0.002742230347349177
+ Normed ED: 0.0027522935779816515
+ Normed ED: 0.0018604651162790699
+ Normed ED: 0.001834862385321101
+ Normed ED: 0.0018231540565177757
+ Normed ED: 0.0027347310847766638
+ Normed ED: 0.0018535681186283596
+ Normed ED: 0.0027522935779816515
+ Normed ED: 0.0036663611365719525
+ Normed ED: 0.0027573529411764708
+ Normed ED: 0.0018484288354898336
+ Normed ED: 0.0027726432532347504
+ Normed ED: 0.0027649769585253456
+ Normed ED: 0.001841620626151013
+ Normed ED: 0.0018181818181818182
+ Normed ED: 0.0018231540565177757
+ Normed ED: 0.0018315018315018315
+ Normed ED: 0.0018433179723502304
+ Normed ED: 0.0027472527472527475
+ Normed ED: 0.0018198362147406734
+ Normed ED: 0.0027522935779816515
+ Normed ED: 0.0018433179723502304
+ Normed ED: 0.0018501387604070306
+ Normed ED: 0.0027472527472527475
+ Normed ED: 0.00458295142071494
+ Normed ED: 0.001834862385321101
+ Normed ED: 0.003683241252302026
+ Normed ED: 0.0018281535648994515
+ Normed ED: 0.0018148820326678765
+ Normed ED: 0.0018281535648994515
+ Normed ED: 0.0018331805682859762
+ Normed ED: 0.0018315018315018315
+ Normed ED: 0.0018198362147406734
+ Normed ED: 0.0018331805682859762
+ Normed ED: 0.0036463081130355514
+ Normed ED: 0.004604051565377533
+ Normed ED: 0.0022290331568682086
+ Normed ED: 0.003336113427856547
+ Normed ED: 0.0018812147272238647
+ Normed ED: 0.002108433734939759
+ Normed ED: 0.0031137724550898203
+ Normed ED: 0.08648648648648649
+ Normed ED: 0.00692979813196746
+ Normed ED: 0.0029069767441860465
+ Normed ED: 0.002661698163428267
+ Normed ED: 0.19735562901030526
+ Normed ED: 0.02846389084921195
+ Normed ED: 0.20491962037575054
+ Normed ED: 0.01669449081803005
+ Normed ED: 0.006018054162487462
+ Normed ED: 0.00909090909090909
+ Normed ED: 0.01366742596810934
+ Normed ED: 0.011376564277588168
+ Normed ED: 0.009727016002510198
+ Normed ED: 0.009139615505830444
+ Normed ED: 0.01093926820067899
+ Normed ED: 0.0163727959697733
+ Normed ED: 0.009491268033409264
+ Normed ED: 0.005605730302086578
+ Normed ED: 0.010173323285606632
+ Normed ED: 0.006556353418669997
+ Normed ED: 0.0069269521410579345
+ Normed ED: 0.010031347962382446
+ Normed ED: 0.00471253534401508
+ Normed ED: 0.008649687650168188
+ Normed ED: 0.015080113100848256
+ Normed ED: 0.01178259217027746
+ Normed ED: 0.02109704641350211
+ Normed ED: 0.012380191693290734
+ Normed ED: 0.6708820488348047
+ Normed ED: 0.0046439628482972135
+ Normed ED: 0.1329818394844757
+ Normed ED: 0.8419055338589639
+ Normed ED: 0.5325825497485239
+ Normed ED: 0.0002752546105147261
+ Normed ED: 0.0
+ Normed ED: 0.20079022988505746
+ Normed ED: 0.0
+ Normed ED: 0.0013999066728884741
+ Normed ED: 0.0
+ Normed ED: 0.0
+ Normed ED: 0.0011706860220088973
+ Normed ED: 0.0
+ Normed ED: 0.0
+ Normed ED: 0.19910394265232975
+ Normed ED: 0.000591016548463357
+ Normed ED: 0.000591715976331361
+ Normed ED: 0.002197802197802198
+ Normed ED: 0.06738599348534202
+ Normed ED: 0.08351915669977701
+ Normed ED: 0.0799512987012987
+ Normed ED: 0.0
+ Normed ED: 0.07887266828872669
+ Normed ED: 0.0
+ Normed ED: 0.0
+ Normed ED: 0.0027635215159889457
+ Normed ED: 0.004140215291195142
+ Normed ED: 0.006714060031595577
+ Normed ED: 0.004434589800443459
+ Normed ED: 0.0033140016570008283
+ Normed ED: 0.005239933811362383
+ Normed ED: 0.004150525733259546
+ Normed ED: 0.0035753575357535755
+ Normed ED: 0.04135486411973218
+ Normed ED: 0.0019677292404565133
+ Normed ED: 0.002786624203821656
+ Normed ED: 0.004428452809299751
+ Normed ED: 0.003880266075388027
+ Normed ED: 0.003169572107765452
+ Normed ED: 0.00986971969996052
+ Normed ED: 0.0036061026352288486
+ Normed ED: 0.00434610825760569
+ Normed ED: 0.0041413583655438985
+ Normed ED: 0.00373366521468575
+ Normed ED: 0.0035101404056162248
+ Normed ED: 0.002317497103128621
+ Normed ED: 0.003738317757009346
+ Normed ED: 0.010844306738962044
+ Normed ED: 0.0025
+ Normed ED: 0.011511895625479662
+ Normed ED: 0.0015020653398422831
+ Normed ED: 0.05070422535211268
+ Normed ED: 0.02714535901926445
+ Normed ED: 0.13726281792490916
+ Normed ED: 0.45114401076716015
+ Normed ED: 0.021328162869607366
+ Normed ED: 0.013543031891655745
+ Normed ED: 0.0039034776437189495
+ Normed ED: 0.532133676092545
+ Normed ED: 0.5645748987854251
+ Normed ED: 0.3541513592946363
+ Normed ED: 0.0019280205655526992
+ Normed ED: 0.5865741645495407
+ Normed ED: 0.0034259611724400457
+ Normed ED: 0.003694581280788177
+ Normed ED: 0.12199630314232902
+ Normed ED: 0.006732263076126359
+ Normed ED: 0.003720663995420721
+ Normed ED: 0.0025575447570332483
+ Normed ED: 0.048975957257346395
+ Normed ED: 0.006979695431472081
+ Normed ED: 0.23022984028048304
+ Normed ED: 0.00395882818685669
+ Normed ED: 0.4699209788427224
+ Normed ED: 0.14365300437723835
+ Normed ED: 0.37177476835352813
+ Normed ED: 0.0032200357781753132
+ Normed ED: 0.005690440060698027
+ Normed ED: 0.8217999429107369
+ Normed ED: 0.625564824469934
+ Normed ED: 0.8354928100659077
+ Normed ED: 0.8683022275737508
+ Normed ED: 0.2730093071354705
+ Normed ED: 0.00245398773006135
+ Normed ED: 0.13815789473684212
+ Normed ED: 0.3953488372093023
+ Normed ED: 0.03038309114927345
+ Normed ED: 0.056636033340457366
+ Normed ED: 0.24712948242360008
+ Normed ED: 0.0084530853761623
+ Normed ED: 0.003262233375156838
+ Normed ED: 0.0025100401606425703
+ Normed ED: 0.0016345210853220007
+ Normed ED: 0.010891488503428802
+ Normed ED: 0.004801097393689987
+ Normed ED: 0.8136384439359268
+ Normed ED: 0.5052704737634658
+ Normed ED: 0.4608011796510199
+ Normed ED: 0.5323895323895323
+ Normed ED: 0.27647988758124015
+ Normed ED: 0.014819587628865979
+ Normed ED: 0.0055577610162763
+ Normed ED: 0.0032699167657550534
+ Normed ED: 0.00267379679144385
+ Normed ED: 0.001201923076923077
+ Normed ED: 0.7256078106055772
+ Normed ED: 0.3478325859491779
+ Normed ED: 0.7314229003845677
+ Normed ED: 0.7881910529400273
+ Normed ED: 0.7218295500883513
+ Normed ED: 0.009444654325651681
+ Normed ED: 0.002224694104560623
+ Normed ED: 0.0015180265654648956
+ Normed ED: 0.4322562751352101
+ Normed ED: 0.27324343506032645
+ Normed ED: 0.2743880808797446
+ Normed ED: 0.0017977528089887641
+ Normed ED: 0.4972733469665985
+ Normed ED: 0.09362992922143579
+ Normed ED: 0.2674380165289256
+ Normed ED: 0.0006793478260869565
+ Normed ED: 0.07390417940876656
+Pushing model to the hub, epoch 3
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+/home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:399: UserWarning: `num_beams` is set to 1. However, `early_stopping` is set to `True` -- this flag is only used in beam-based generation modes. You should set `num_beams>1` or unset `early_stopping`.
+  warnings.warn(
+ Normed ED: 0.15583804143126176
+ Normed ED: 0.2919474991131607
+ Normed ED: 0.014340344168260038
+ Normed ED: 0.14209591474245115
+ Normed ED: 0.45168767202665505
+ Normed ED: 0.1989402697495183
+ Normed ED: 0.3360655737704918
+ Normed ED: 0.30225513295186807
+ Normed ED: 0.22298664508296237
+ Normed ED: 0.7435387673956262
+ Normed ED: 0.3
+ Normed ED: 0.16469038208168643
+ Normed ED: 0.3305515978017505
+ Normed ED: 0.19494584837545126
+ Normed ED: 0.22694425326909842
+ Normed ED: 0.004531722054380665
+ Normed ED: 0.3526388888888889
+ Normed ED: 0.02262142381902861
+ Normed ED: 0.0052603892688058915
+ Normed ED: 0.004280155642023347
+ Normed ED: 0.36684696150174995
+ Normed ED: 0.8021906245289655
+ Normed ED: 0.41620333598093723
+ Normed ED: 0.0005303632988597189
+ Normed ED: 0.5741747572815534
+ Normed ED: 0.0029615004935834156
+ Normed ED: 0.008563273073263558
+ Normed ED: 0.013071895424836602
+ Normed ED: 0.014111006585136407
+ Normed ED: 0.008514664143803218
+ Normed ED: 0.5093174935942232
+ Normed ED: 0.7071547420965059
+ Normed ED: 0.015096304008328995
+ Normed ED: 0.0808244089715094
+ Normed ED: 0.4354055064158465
+ Normed ED: 0.24624954262714965
+ Normed ED: 0.22347550229115262
+ Normed ED: 0.001924001924001924
+ Normed ED: 0.0016863406408094434
+ Normed ED: 0.0022404779686333084
+ Normed ED: 0.0033407572383073497
+ Normed ED: 0.4455713319810683
+ Normed ED: 0.045681477783325014
+ Normed ED: 0.6244622522142556
+ Normed ED: 0.6402196402992201
+ Normed ED: 0.017782909930715934
+ Normed ED: 0.5675829383886256
+ Normed ED: 0.2762594665788607
+ Normed ED: 0.13725861416130253
+ Normed ED: 0.596970816401921
+ Normed ED: 0.6496350364963503
+ Normed ED: 0.013838748495788207
+ Normed ED: 0.2890302066772655
+ Normed ED: 0.2661290322580645
+ Normed ED: 0.5729236038435924
+ Normed ED: 0.0027447392497712718
+ Normed ED: 0.001838235294117647
+ Normed ED: 0.0018198362147406734
+ Normed ED: 0.004570383912248629
+ Normed ED: 0.0018365472910927456
+ Normed ED: 0.0018604651162790699
+ Normed ED: 0.001834862385321101
+ Normed ED: 0.0018231540565177757
+ Normed ED: 0.0018248175182481751
+ Normed ED: 0.0018535681186283596
+ Normed ED: 0.0018365472910927456
+ Normed ED: 0.00458295142071494
+ Normed ED: 0.001838235294117647
+ Normed ED: 0.0018484288354898336
+ Normed ED: 0.0018484288354898336
+ Normed ED: 0.0018433179723502304
+ Normed ED: 0.001841620626151013
+ Normed ED: 0.0018181818181818182
+ Normed ED: 0.0018231540565177757
+ Normed ED: 0.0018315018315018315
+ Normed ED: 0.0018433179723502304
+ Normed ED: 0.0027472527472527475
+ Normed ED: 0.003639672429481347
+ Normed ED: 0.0018365472910927456
+ Normed ED: 0.0018433179723502304
+ Normed ED: 0.0027726432532347504
+ Normed ED: 0.0027472527472527475
+ Normed ED: 0.0018365472910927456
+ Normed ED: 0.001834862385321101
+ Normed ED: 0.003683241252302026
+ Normed ED: 0.0018281535648994515
+ Normed ED: 0.0018148820326678765
+ Normed ED: 0.0018281535648994515
+ Normed ED: 0.0018331805682859762
+ Normed ED: 0.0018315018315018315
+ Normed ED: 0.0018198362147406734
+ Normed ED: 0.0018331805682859762
+ Normed ED: 0.0027347310847766638
+ Normed ED: 0.007366482504604052
+ Normed ED: 0.0019504040122596824
+ Normed ED: 0.004170141784820684
+ Normed ED: 0.002149959688255845
+ Normed ED: 0.0033132530120481927
+ Normed ED: 0.0019161676646706587
+ Normed ED: 0.08540540540540541
+ Normed ED: 0.005724615848147032
+ Normed ED: 0.0029069767441860465
+ Normed ED: 0.0023955283470854403
+ Normed ED: 0.19443904335990667
+ Normed ED: 0.02869912961656081
+ Normed ED: 0.20491962037575054
+ Normed ED: 0.068334937439846
+ Normed ED: 0.08732017397122784
+ Normed ED: 0.010038240917782026
+ Normed ED: 0.012908124525436599
+ Normed ED: 0.004550625711035267
+ Normed ED: 0.005020395356134295
+ Normed ED: 0.008509297195083518
+ Normed ED: 0.007918552036199095
+ Normed ED: 0.014177693761814745
+ Normed ED: 0.0068415051311288486
+ Normed ED: 0.012457178449081284
+ Normed ED: 0.010188679245283019
+ Normed ED: 0.014366021236727046
+ Normed ED: 0.005988023952095809
+ Normed ED: 0.008463949843260187
+ Normed ED: 0.005647944775651083
+ Normed ED: 0.007197696737044146
+ Normed ED: 0.012558869701726845
+ Normed ED: 0.008741923223109084
+ Normed ED: 0.004922644163150493
+ Normed ED: 0.048827374086889655
+ Normed ED: 0.6712797263978366
+ Normed ED: 0.0046439628482972135
+ Normed ED: 0.13317711384495215
+ Normed ED: 0.8431213617272124
+ Normed ED: 0.534769298053794
+ Normed ED: 0.0002752546105147261
+ Normed ED: 0.0
+ Normed ED: 0.20168821839080459
+ Normed ED: 0.0
+ Normed ED: 0.00046652670865407047
+ Normed ED: 0.0
+ Normed ED: 0.0
+ Normed ED: 0.0004682744088035589
+ Normed ED: 0.0
+ Normed ED: 0.0
+ Normed ED: 0.1982078853046595
+ Normed ED: 0.000591016548463357
+ Normed ED: 0.0005920663114268798
+ Normed ED: 0.0019230769230769232
+ Normed ED: 0.06799674267100977
+ Normed ED: 0.08716805189539834
+ Normed ED: 0.07426948051948051
+ Normed ED: 0.0007009345794392523
+ Normed ED: 0.07927818329278183
+ Normed ED: 0.0
+ Normed ED: 0.0
+ Normed ED: 0.001579778830963665
+ Normed ED: 0.004692243996687827
+ Normed ED: 0.005529225908372828
+ Normed ED: 0.003048780487804878
+ Normed ED: 0.0019331676332504833
+ Normed ED: 0.00441257584114727
+ Normed ED: 0.00387382401770891
+ Normed ED: 0.004125412541254125
+ Normed ED: 0.003937007874015748
+ Normed ED: 0.0035405192761605035
+ Normed ED: 0.00238758456028651
+ Normed ED: 0.004705231109880985
+ Normed ED: 0.0024944567627494456
+ Normed ED: 0.001190003966679889
+ Normed ED: 0.006316620607974733
+ Normed ED: 0.002219140083217753
+ Normed ED: 0.0015816528272044287
+ Normed ED: 0.005247169290251312
+ Normed ED: 0.00373366521468575
+ Normed ED: 0.0031201248049922
+ Normed ED: 0.002317497103128621
+ Normed ED: 0.003738317757009346
+ Normed ED: 0.008133230054221533
+ Normed ED: 0.0025
+ Normed ED: 0.013056835637480798
+ Normed ED: 0.0022530980097634247
+ Normed ED: 0.04962080173347779
+ Normed ED: 0.010507880910683012
+ Normed ED: 0.004844570044408559
+ Normed ED: 0.44818304172274565
+ Normed ED: 0.015066828675577158
+ Normed ED: 0.008326029798422436
+ Normed ED: 0.00248403122782115
+ Normed ED: 0.5238627472895943
+ Normed ED: 0.5669028340080972
+ Normed ED: 0.3556208670095518
+ Normed ED: 0.0016066838046272494
+ Normed ED: 0.5844244674614032
+ Normed ED: 0.0022839741149600305
+ Normed ED: 0.0030807147258163892
+ Normed ED: 0.12302320805093449
+ Normed ED: 0.015535991714137753
+ Normed ED: 0.002003434459072696
+ Normed ED: 0.002301790281329923
+ Normed ED: 0.054764024933214604
+ Normed ED: 0.005710659898477157
+ Normed ED: 0.22847682119205298
+ Normed ED: 0.001979414093428345
+ Normed ED: 0.4728524088707622
+ Normed ED: 0.1416633505769996
+ Normed ED: 0.37120456165359944
+ Normed ED: 0.003934191702432046
+ Normed ED: 0.004174573055028463
+ Normed ED: 0.821963055091139
+ Normed ED: 0.6256517205422315
+ Normed ED: 0.8360545236668664
+ Normed ED: 0.8686634557495485
+ Normed ED: 0.2774905205101689
+ Normed ED: 0.03742331288343558
+ Normed ED: 0.1735480943738657
+ Normed ED: 0.10070108349267048
+ Normed ED: 0.025759577278731835
+ Normed ED: 0.05556742893780722
+ Normed ED: 0.2384737678855326
+ Normed ED: 0.01733615221987315
+ Normed ED: 0.00301129234629862
+ Normed ED: 0.0035140562248995983
+ Normed ED: 0.0016345210853220007
+ Normed ED: 0.010488100040338847
+ Normed ED: 0.0037761757638173706
+ Normed ED: 0.8140503432494279
+ Normed ED: 0.4848835862388509
+ Normed ED: 0.46399606782993363
+ Normed ED: 0.5137280137280137
+ Normed ED: 0.23239065519058494
+ Normed ED: 0.01095360824742268
+ Normed ED: 0.005555555555555556
+ Normed ED: 0.00267538644470868
+ Normed ED: 0.00267379679144385
+ Normed ED: 0.001201923076923077
+ Normed ED: 0.7242677557271393
+ Normed ED: 0.34723467862481316
+ Normed ED: 0.7314229003845677
+ Normed ED: 0.7881910529400273
+ Normed ED: 0.72318879978252
+ Normed ED: 0.006432084752175558
+ Normed ED: 0.0027808676307007787
+ Normed ED: 0.0015180265654648956
+ Normed ED: 0.43253362917764526
+ Normed ED: 0.2727111426543648
+ Normed ED: 0.27137282724370343
+ Normed ED: 0.0013489208633093526
+ Normed ED: 0.4967052942513065
+ Normed ED: 0.0942366026289181
+ Normed ED: 0.2674380165289256
+ Normed ED: 0.0006793478260869565
+ Normed ED: 0.006622516556291391
+Pushing model to the hub, epoch 4
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+/home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:399: UserWarning: `num_beams` is set to 1. However, `early_stopping` is set to `True` -- this flag is only used in beam-based generation modes. You should set `num_beams>1` or unset `early_stopping`.
+  warnings.warn(
+ Normed ED: 0.1064030131826742
+ Normed ED: 0.3557999290528556
+ Normed ED: 0.0124282982791587
+ Normed ED: 0.1354723707664884
+ Normed ED: 0.432565551209619
+ Normed ED: 0.13517953532034735
+ Normed ED: 0.25941176470588234
+ Normed ED: 0.2911477616963985
+ Normed ED: 0.25050586806960745
+ Normed ED: 0.6345467523197716
+ Normed ED: 0.33460076045627374
+ Normed ED: 0.18906455862977603
+ Normed ED: 0.28332994097292896
+ Normed ED: 0.18761384335154827
+ Normed ED: 0.22711631108052305
+ Normed ED: 0.0037764350453172208
+ Normed ED: 0.34833333333333333
+ Normed ED: 0.0013306719893546241
+ Normed ED: 0.004734350341925302
+ Normed ED: 0.0031128404669260703
+ Normed ED: 0.3679605472478524
+ Normed ED: 0.7968145505702657
+ Normed ED: 0.41633571617685994
+ Normed ED: 0.0005303632988597189
+ Normed ED: 0.5739805825242719
+ Normed ED: 0.002303389272787101
+ Normed ED: 0.008563273073263558
+ Normed ED: 0.01027077497665733
+ Normed ED: 0.008466603951081843
+ Normed ED: 0.015137180700094607
+ Normed ED: 0.5137433030514792
+ Normed ED: 0.709095951192457
+ Normed ED: 0.014055179593961478
+ Normed ED: 0.08021822590422308
+ Normed ED: 0.4357792450479631
+ Normed ED: 0.24277350896450786
+ Normed ED: 0.22329925978145929
+ Normed ED: 0.001924001924001924
+ Normed ED: 0.0016863406408094434
+ Normed ED: 0.0022404779686333084
+ Normed ED: 0.0033407572383073497
+ Normed ED: 0.4430020283975659
+ Normed ED: 0.009421950598421186
+ Normed ED: 0.6224377899620414
+ Normed ED: 0.6383893044723858
+ Normed ED: 0.011332099907493062
+ Normed ED: 0.5720379146919431
+ Normed ED: 0.26687520579519264
+ Normed ED: 0.14577811435062477
+ Normed ED: 0.5963243442925749
+ Normed ED: 0.6542164932442925
+ Normed ED: 0.009673518742442563
+ Normed ED: 0.28426073131955487
+ Normed ED: 0.2602040816326531
+ Normed ED: 0.5739701265341072
+ Normed ED: 0.0018298261665141812
+ Normed ED: 0.001838235294117647
+ Normed ED: 0.0018198362147406734
+ Normed ED: 0.003656307129798903
+ Normed ED: 0.0027548209366391185
+ Normed ED: 0.0018604651162790699
+ Normed ED: 0.001834862385321101
+ Normed ED: 0.0018231540565177757
+ Normed ED: 0.0018248175182481751
+ Normed ED: 0.0018535681186283596
+ Normed ED: 0.0027548209366391185
+ Normed ED: 0.0036663611365719525
+ Normed ED: 0.001838235294117647
+ Normed ED: 0.0018484288354898336
+ Normed ED: 0.0018484288354898336
+ Normed ED: 0.0018433179723502304
+ Normed ED: 0.0027598896044158236
+ Normed ED: 0.0018181818181818182
+ Normed ED: 0.0018231540565177757
+ Normed ED: 0.0018315018315018315
+ Normed ED: 0.0018433179723502304
+ Normed ED: 0.0027472527472527475
+ Normed ED: 0.00272975432211101
+ Normed ED: 0.0018365472910927456
+ Normed ED: 0.0018433179723502304
+ Normed ED: 0.0018501387604070306
+ Normed ED: 0.0027447392497712718
+ Normed ED: 0.0036663611365719525
+ Normed ED: 0.001834862385321101
+ Normed ED: 0.003683241252302026
+ Normed ED: 0.0018281535648994515
+ Normed ED: 0.0018148820326678765
+ Normed ED: 0.0018281535648994515
+ Normed ED: 0.0018331805682859762
+ Normed ED: 0.0018315018315018315
+ Normed ED: 0.0018198362147406734
+ Normed ED: 0.0018331805682859762
+ Normed ED: 0.00273224043715847
+ Normed ED: 0.001841620626151013
+ Normed ED: 0.0016722408026755853
+ Normed ED: 0.0029190992493744786
+ Normed ED: 0.0018812147272238647
+ Normed ED: 0.002108433734939759
+ Normed ED: 0.0031137724550898203
+ Normed ED: 0.08562162162162162
+ Normed ED: 0.004519433564326604
+ Normed ED: 0.0029069767441860465
+ Normed ED: 0.002661698163428267
+ Normed ED: 0.19755006805366518
+ Normed ED: 0.02846389084921195
+ Normed ED: 0.20491962037575054
+ Normed ED: 0.01335559265442404
+ Normed ED: 0.005687520910003346
+ Normed ED: 0.013397129186602871
+ Normed ED: 0.012148823082763858
+ Normed ED: 0.006446719757299962
+ Normed ED: 0.007844367743959836
+ Normed ED: 0.008194138039710053
+ Normed ED: 0.009815024537561345
+ Normed ED: 0.011657214870825458
+ Normed ED: 0.006461421512732801
+ Normed ED: 0.011166253101736972
+ Normed ED: 0.011312217194570135
+ Normed ED: 0.005933791380387258
+ Normed ED: 0.003151591553734636
+ Normed ED: 0.012852664576802508
+ Normed ED: 0.004714016341923318
+ Normed ED: 0.005283381364073006
+ Normed ED: 0.01631116687578419
+ Normed ED: 0.00798175598631699
+ Normed ED: 0.005977496483825597
+ Normed ED: 0.0075878594249201275
+ Normed ED: 0.6710411198600175
+ Normed ED: 0.0046439628482972135
+ Normed ED: 0.1329818394844757
+ Normed ED: 0.8420160636651683
+ Normed ED: 0.5320358626722065
+ Normed ED: 0.000275178866263071
+ Normed ED: 0.0
+ Normed ED: 0.1997126436781609
+ Normed ED: 0.0
+ Normed ED: 0.0004666355576294914
+ Normed ED: 0.0
+ Normed ED: 0.0
+ Normed ED: 0.00023413720440177945
+ Normed ED: 0.0
+ Normed ED: 0.0
+ Normed ED: 0.1989247311827957
+ Normed ED: 0.000591016548463357
+ Normed ED: 0.0
+ Normed ED: 0.002197802197802198
+ Normed ED: 0.06779315960912052
+ Normed ED: 0.08574903709710116
+ Normed ED: 0.07528409090909091
+ Normed ED: 0.00023364485981308412
+ Normed ED: 0.07948094079480941
+ Normed ED: 0.0
+ Normed ED: 0.0
+ Normed ED: 0.0019747235387045812
+ Normed ED: 0.004140215291195142
+ Normed ED: 0.002764612954186414
+ Normed ED: 0.0036031042128603103
+ Normed ED: 0.0030378348522507597
+ Normed ED: 0.002206287920573635
+ Normed ED: 0.003320420586607637
+ Normed ED: 0.0035743744844652188
+ Normed ED: 0.0031508467900748325
+ Normed ED: 0.0027548209366391185
+ Normed ED: 0.0031821797931583136
+ Normed ED: 0.004151674508718516
+ Normed ED: 0.0047117516629711755
+ Normed ED: 0.0015860428231562252
+ Normed ED: 0.006316620607974733
+ Normed ED: 0.0036061026352288486
+ Normed ED: 0.002766798418972332
+ Normed ED: 0.005247169290251312
+ Normed ED: 0.00373366521468575
+ Normed ED: 0.00234009360374415
+ Normed ED: 0.002317497103128621
+ Normed ED: 0.003738317757009346
+ Normed ED: 0.003875968992248062
+ Normed ED: 0.0025
+ Normed ED: 0.011529592621060722
+ Normed ED: 0.0015020653398422831
+ Normed ED: 0.0504875406283857
+ Normed ED: 0.010507880910683012
+ Normed ED: 0.004037141703673799
+ Normed ED: 0.45020188425302826
+ Normed ED: 0.012147716229348883
+ Normed ED: 0.010078878177037686
+ Normed ED: 0.0035486160397444995
+ Normed ED: 0.5245333631384822
+ Normed ED: 0.5653846153846154
+ Normed ED: 0.3556208670095518
+ Normed ED: 0.02602827763496144
+ Normed ED: 0.5861833105335157
+ Normed ED: 0.0022839741149600305
+ Normed ED: 0.0030807147258163892
+ Normed ED: 0.12179092216060793
+ Normed ED: 0.00983946141895391
+ Normed ED: 0.0031482541499713796
+ Normed ED: 0.0028118609406952966
+ Normed ED: 0.051647373107747106
+ Normed ED: 0.005076142131979695
+ Normed ED: 0.22652902220490845
+ Normed ED: 0.0035629453681710215
+ Normed ED: 0.4687738975274025
+ Normed ED: 0.15081575805809788
+ Normed ED: 0.37106200997861727
+ Normed ED: 0.00357653791130186
+ Normed ED: 0.01062618595825427
+ Normed ED: 0.8222485014068426
+ Normed ED: 0.6259124087591241
+ Normed ED: 0.8356051527860995
+ Normed ED: 0.8689644792293799
+ Normed ED: 0.27783522923129955
+ Normed ED: 0.0015337423312883436
+ Normed ED: 0.13611615245009073
+ Normed ED: 0.052666227781435156
+ Normed ED: 0.02906208718626156
+ Normed ED: 0.05236161572985681
+ Normed ED: 0.2398869457692987
+ Normed ED: 0.008449514152936205
+ Normed ED: 0.002258469259723965
+ Normed ED: 0.002008032128514056
+ Normed ED: 0.0016345210853220007
+ Normed ED: 0.0052440500201694235
+ Normed ED: 0.002403020940611054
+ Normed ED: 0.8135926773455378
+ Normed ED: 0.4841885787096027
+ Normed ED: 0.46399606782993363
+ Normed ED: 0.5151222651222651
+ Normed ED: 0.23080976637976464
+ Normed ED: 0.012242268041237113
+ Normed ED: 0.004370282081843465
+ Normed ED: 0.00267538644470868
+ Normed ED: 0.00267379679144385
+ Normed ED: 0.001201923076923077
+ Normed ED: 0.7256078106055772
+ Normed ED: 0.34723467862481316
+ Normed ED: 0.7314229003845677
+ Normed ED: 0.7881910529400273
+ Normed ED: 0.7204703003941824
+ Normed ED: 0.006053726825576996
+ Normed ED: 0.002224694104560623
+ Normed ED: 0.0015180265654648956
+ Normed ED: 0.43322701428373317
+ Normed ED: 0.2735982966643009
+ Normed ED: 0.2740333451578574
+ Normed ED: 0.0013489208633093526
+ Normed ED: 0.49818223131106565
+ Normed ED: 0.09302325581395349
+ Normed ED: 0.2672727272727273
+ Normed ED: 0.0006793478260869565
+ Normed ED: 0.1651376146788991
+Pushing model to the hub, epoch 5
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+/home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:399: UserWarning: `num_beams` is set to 1. However, `early_stopping` is set to `True` -- this flag is only used in beam-based generation modes. You should set `num_beams>1` or unset `early_stopping`.
+  warnings.warn(
+ Normed ED: 0.05743879472693032
+ Normed ED: 0.3157147924796027
+ Normed ED: 0.1711281070745698
+ Normed ED: 0.14209591474245115
+ Normed ED: 0.4266261045922063
+ Normed ED: 0.1072463768115942
+ Normed ED: 0.22792207792207791
+ Normed ED: 0.2798720969370582
+ Normed ED: 0.12666936462970457
+ Normed ED: 0.14013346043851288
+ Normed ED: 0.2813688212927757
+ Normed ED: 0.23451910408432147
+ Normed ED: 0.44819865662527986
+ Normed ED: 0.10752688172043011
+ Normed ED: 0.2264280798348245
+ Normed ED: 0.005287009063444109
+ Normed ED: 0.3473611111111111
+ Normed ED: 0.00033266799733865603
+ Normed ED: 0.003156233561283535
+ Normed ED: 0.002723735408560311
+ Normed ED: 0.3557111040407254
+ Normed ED: 0.7964628447972667
+ Normed ED: 0.41501191421763306
+ Normed ED: 0.0005303632988597189
+ Normed ED: 0.5739805825242719
+ Normed ED: 0.002303389272787101
+ Normed ED: 0.008563273073263558
+ Normed ED: 0.009337068160597572
+ Normed ED: 0.008466603951081843
+ Normed ED: 0.014177693761814745
+ Normed ED: 0.5111809923130678
+ Normed ED: 0.7110371602884082
+ Normed ED: 0.015616866215512754
+ Normed ED: 0.08163265306122448
+ Normed ED: 0.4342842905194967
+ Normed ED: 0.23344310281741676
+ Normed ED: 0.20796616143813887
+ Normed ED: 0.001924001924001924
+ Normed ED: 0.0016863406408094434
+ Normed ED: 0.0022404779686333084
+ Normed ED: 0.0033407572383073497
+ Normed ED: 0.44286680189317107
+ Normed ED: 0.005092946269416858
+ Normed ED: 0.625896246309574
+ Normed ED: 0.6428457743116346
+ Normed ED: 0.00786308973172988
+ Normed ED: 0.5696682464454976
+ Normed ED: 0.26901547579848534
+ Normed ED: 0.1408557364634608
+ Normed ED: 0.5991872922053935
+ Normed ED: 0.6556918776207485
+ Normed ED: 0.0024286581663630845
+ Normed ED: 0.2823529411764706
+ Normed ED: 0.26497695852534564
+ Normed ED: 0.5737798496812863
+ Normed ED: 0.0018298261665141812
+ Normed ED: 0.001838235294117647
+ Normed ED: 0.0018198362147406734
+ Normed ED: 0.002742230347349177
+ Normed ED: 0.0027548209366391185
+ Normed ED: 0.0018604651162790699
+ Normed ED: 0.001834862385321101
+ Normed ED: 0.0027347310847766638
+ Normed ED: 0.0018248175182481751
+ Normed ED: 0.0018535681186283596
+ Normed ED: 0.0018365472910927456
+ Normed ED: 0.0036663611365719525
+ Normed ED: 0.001838235294117647
+ Normed ED: 0.0018484288354898336
+ Normed ED: 0.0036968576709796672
+ Normed ED: 0.0027649769585253456
+ Normed ED: 0.001841620626151013
+ Normed ED: 0.0018181818181818182
+ Normed ED: 0.0018231540565177757
+ Normed ED: 0.0018315018315018315
+ Normed ED: 0.0018433179723502304
+ Normed ED: 0.0027472527472527475
+ Normed ED: 0.00272975432211101
+ Normed ED: 0.0027522935779816515
+ Normed ED: 0.0018433179723502304
+ Normed ED: 0.0018501387604070306
+ Normed ED: 0.0018315018315018315
+ Normed ED: 0.0018365472910927456
+ Normed ED: 0.003669724770642202
+ Normed ED: 0.003683241252302026
+ Normed ED: 0.0018281535648994515
+ Normed ED: 0.0018148820326678765
+ Normed ED: 0.0018281535648994515
+ Normed ED: 0.0018331805682859762
+ Normed ED: 0.0027472527472527475
+ Normed ED: 0.00272975432211101
+ Normed ED: 0.0018331805682859762
+ Normed ED: 0.0018231540565177757
+ Normed ED: 0.003683241252302026
+ Normed ED: 0.0011148272017837235
+ Normed ED: 0.0029190992493744786
+ Normed ED: 0.0018812147272238647
+ Normed ED: 0.002108433734939759
+ Normed ED: 0.002874251497005988
+ Normed ED: 0.08497297297297297
+ Normed ED: 0.006327206990057246
+ Normed ED: 0.003737541528239203
+ Normed ED: 0.002661698163428267
+ Normed ED: 0.19755006805366518
+ Normed ED: 0.027993413314514232
+ Normed ED: 0.20491962037575054
+ Normed ED: 0.009015025041736227
+ Normed ED: 0.0036789297658862876
+ Normed ED: 0.008133971291866028
+ Normed ED: 0.008352315869400152
+ Normed ED: 0.006067500948047023
+ Normed ED: 0.006275494195167869
+ Normed ED: 0.006618342262842736
+ Normed ED: 0.009060022650056626
+ Normed ED: 0.009439899307740718
+ Normed ED: 0.006461421512732801
+ Normed ED: 0.011768349334159182
+ Normed ED: 0.009811320754716982
+ Normed ED: 0.004372267332916927
+ Normed ED: 0.0028346456692913387
+ Normed ED: 0.006896551724137931
+ Normed ED: 0.004714016341923318
+ Normed ED: 0.0038443056222969728
+ Normed ED: 0.013211701793016672
+ Normed ED: 0.007978723404255319
+ Normed ED: 0.004571026722925457
+ Normed ED: 0.005191693290734824
+ Normed ED: 0.670722977809592
+ Normed ED: 0.0046439628482972135
+ Normed ED: 0.1329818394844757
+ Normed ED: 0.8418318473214944
+ Normed ED: 0.5317078504264159
+ Normed ED: 0.0
+ Normed ED: 0.0
+ Normed ED: 0.20079022988505746
+ Normed ED: 0.0
+ Normed ED: 0.0
+ Normed ED: 0.0
+ Normed ED: 0.0
+ Normed ED: 0.0004682744088035589
+ Normed ED: 0.0
+ Normed ED: 0.0
+ Normed ED: 0.19874551971326165
+ Normed ED: 0.000591016548463357
+ Normed ED: 0.0
+ Normed ED: 0.0008241758241758242
+ Normed ED: 0.06697882736156352
+ Normed ED: 0.08311372390026353
+ Normed ED: 0.07548701298701299
+ Normed ED: 0.0
+ Normed ED: 0.07927818329278183
+ Normed ED: 0.0
+ Normed ED: 0.0
+ Normed ED: 0.0019747235387045812
+ Normed ED: 0.0033121722329561135
+ Normed ED: 0.002369668246445498
+ Normed ED: 0.003048780487804878
+ Normed ED: 0.0016570008285004142
+ Normed ED: 0.003033645890788748
+ Normed ED: 0.0038716814159292035
+ Normed ED: 0.003299422601044817
+ Normed ED: 0.003543307086614173
+ Normed ED: 0.0023603461841070024
+ Normed ED: 0.002786624203821656
+ Normed ED: 0.004150525733259546
+ Normed ED: 0.0024944567627494456
+ Normed ED: 0.001190003966679889
+ Normed ED: 0.0094749309119621
+ Normed ED: 0.0036061026352288486
+ Normed ED: 0.0011862396204033216
+ Normed ED: 0.004418668876001105
+ Normed ED: 0.00373366521468575
+ Normed ED: 0.00234009360374415
+ Normed ED: 0.002317497103128621
+ Normed ED: 0.003738317757009346
+ Normed ED: 0.004263565891472868
+ Normed ED: 0.0025
+ Normed ED: 0.007692307692307693
+ Normed ED: 0.0015020653398422831
+ Normed ED: 0.04962080173347779
+ Normed ED: 0.009194395796847636
+ Normed ED: 0.003229713362939039
+ Normed ED: 0.45074024226110365
+ Normed ED: 0.011421628189550425
+ Normed ED: 0.008764241893076249
+ Normed ED: 0.0039034776437189495
+ Normed ED: 0.5265452106851458
+ Normed ED: 0.5715587044534413
+ Normed ED: 0.3541513592946363
+ Normed ED: 0.02602827763496144
+ Normed ED: 0.5859878835255032
+ Normed ED: 0.1130567186905215
+ Normed ED: 0.0036968576709796672
+ Normed ED: 0.12363935099609775
+ Normed ED: 0.0072501294665976174
+ Normed ED: 0.004865483686319404
+ Normed ED: 0.002813299232736573
+ Normed ED: 0.05120213713268032
+ Normed ED: 0.005710659898477157
+ Normed ED: 0.22204908453447605
+ Normed ED: 0.0011876484560570072
+ Normed ED: 0.4674993627326026
+ Normed ED: 0.1416633505769996
+ Normed ED: 0.37091945830363504
+ Normed ED: 0.0025044722719141325
+ Normed ED: 0.004174573055028463
+ Normed ED: 0.8223300574970436
+ Normed ED: 0.6261730969760166
+ Normed ED: 0.8357174955062912
+ Normed ED: 0.8687236604455147
+ Normed ED: 0.2671492588762496
+ Normed ED: 0.002147239263803681
+ Normed ED: 0.14337568058076225
+ Normed ED: 0.04786885245901639
+ Normed ED: 0.035667107001321
+ Normed ED: 0.05813207950416756
+ Normed ED: 0.23052464228934816
+ Normed ED: 0.009286618826509076
+ Normed ED: 0.002258469259723965
+ Normed ED: 0.002509410288582183
+ Normed ED: 0.0016345210853220007
+ Normed ED: 0.005647438483259379
+ Normed ED: 0.004118050789293068
+ Normed ED: 0.8139130434782609
+ Normed ED: 0.48268272906289816
+ Normed ED: 0.46399606782993363
+ Normed ED: 0.5142642642642643
+ Normed ED: 0.22571579132267697
+ Normed ED: 0.0051513200257566
+ Normed ED: 0.003575685339690107
+ Normed ED: 0.00267538644470868
+ Normed ED: 0.00267379679144385
+ Normed ED: 0.001201923076923077
+ Normed ED: 0.7265649926616042
+ Normed ED: 0.34723467862481316
+ Normed ED: 0.7314229003845677
+ Normed ED: 0.7881910529400273
+ Normed ED: 0.7210819627565583
+ Normed ED: 0.0037835792659856224
+ Normed ED: 0.002224694104560623
+ Normed ED: 0.0015180265654648956
+ Normed ED: 0.43281098322008044
+ Normed ED: 0.27324343506032645
+ Normed ED: 0.27456544874068817
+ Normed ED: 0.0013489208633093526
+ Normed ED: 0.49636446262213135
+ Normed ED: 0.09504550050556117
+ Normed ED: 0.2674380165289256
+ Normed ED: 0.0006793478260869565
+ Normed ED: 0.004077471967380225
+Pushing model to the hub, epoch 6
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+/home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:399: UserWarning: `num_beams` is set to 1. However, `early_stopping` is set to `True` -- this flag is only used in beam-based generation modes. You should set `num_beams>1` or unset `early_stopping`.
+  warnings.warn(
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+ Normed ED: 0.14221014492753623
+ Normed ED: 0.274210713018801
+ Normed ED: 0.17590822179732313
+ Normed ED: 0.006172839506172839
+ Normed ED: 0.45516442126611617
+ Normed ED: 0.11585518102372035
+ Normed ED: 0.31621112158341186
+ Normed ED: 0.2798720969370582
+ Normed ED: 0.11169566976932416
+ Normed ED: 0.12742616033755275
+ Normed ED: 0.37832699619771865
+ Normed ED: 0.27733860342555994
+ Normed ED: 0.23346224302869936
+ Normed ED: 0.07660455486542443
+ Normed ED: 0.2264280798348245
+ Normed ED: 0.0037764350453172208
+ Normed ED: 0.3545833333333333
+ Normed ED: 0.0006653359946773121
+ Normed ED: 0.004734350341925302
+ Normed ED: 0.002723735408560311
+ Normed ED: 0.36732421253579384
+ Normed ED: 0.7959101642968397
+ Normed ED: 0.4142176330420969
+ Normed ED: 0.0005303632988597189
+ Normed ED: 0.5737864077669903
+ Normed ED: 0.0026324448831852583
+ Normed ED: 0.008563273073263558
+ Normed ED: 0.009337068160597572
+ Normed ED: 0.00940733772342427
+ Normed ED: 0.00945179584120983
+ Normed ED: 0.5097833682739343
+ Normed ED: 0.7146422628951747
+ Normed ED: 0.01404786680541103
+ Normed ED: 0.07880379874722167
+ Normed ED: 0.4337859723433412
+ Normed ED: 0.23948042444200512
+ Normed ED: 0.2229467747620726
+ Normed ED: 0.001924001924001924
+ Normed ED: 0.0016863406408094434
+ Normed ED: 0.0022404779686333084
+ Normed ED: 0.0033407572383073497
+ Normed ED: 0.4423258958755916
+ Normed ED: 0.005092946269416858
+ Normed ED: 0.6233656684943062
+ Normed ED: 0.6368772879197836
+ Normed ED: 0.008314087759815243
+ Normed ED: 0.5716587677725119
+ Normed ED: 0.27395456042146854
+ Normed ED: 0.14255963650132525
+ Normed ED: 0.5939231621721462
+ Normed ED: 0.651421028109955
+ Normed ED: 0.0030358227079538553
+ Normed ED: 0.28521462639109696
+ Normed ED: 0.260697827518104
+ Normed ED: 0.5738749881076967
+ Normed ED: 0.0018298261665141812
+ Normed ED: 0.001838235294117647
+ Normed ED: 0.0018198362147406734
+ Normed ED: 0.002742230347349177
+ Normed ED: 0.0018365472910927456
+ Normed ED: 0.0018604651162790699
+ Normed ED: 0.001834862385321101
+ Normed ED: 0.0018231540565177757
+ Normed ED: 0.0018248175182481751
+ Normed ED: 0.0018535681186283596
+ Normed ED: 0.0018365472910927456
+ Normed ED: 0.0036663611365719525
+ Normed ED: 0.001838235294117647
+ Normed ED: 0.0018484288354898336
+ Normed ED: 0.0018484288354898336
+ Normed ED: 0.0018433179723502304
+ Normed ED: 0.001841620626151013
+ Normed ED: 0.005454545454545455
+ Normed ED: 0.0018231540565177757
+ Normed ED: 0.0018315018315018315
+ Normed ED: 0.0018433179723502304
+ Normed ED: 0.0027472527472527475
+ Normed ED: 0.00272975432211101
+ Normed ED: 0.0018365472910927456
+ Normed ED: 0.0027649769585253456
+ Normed ED: 0.0018501387604070306
+ Normed ED: 0.0018315018315018315
+ Normed ED: 0.0018365472910927456
+ Normed ED: 0.001834862385321101
+ Normed ED: 0.003683241252302026
+ Normed ED: 0.0018281535648994515
+ Normed ED: 0.0018148820326678765
+ Normed ED: 0.0018281535648994515
+ Normed ED: 0.0018331805682859762
+ Normed ED: 0.0018315018315018315
+ Normed ED: 0.0018198362147406734
+ Normed ED: 0.0018331805682859762
+ Normed ED: 0.0036463081130355514
+ Normed ED: 0.004604051565377533
+ Normed ED: 0.0013935340022296545
+ Normed ED: 0.0029190992493744786
+ Normed ED: 0.0018812147272238647
+ Normed ED: 0.002108433734939759
+ Normed ED: 0.0026347305389221557
+ Normed ED: 0.08194594594594595
+ Normed ED: 0.004218137993371497
+ Normed ED: 0.0029069767441860465
+ Normed ED: 0.0023955283470854403
+ Normed ED: 0.19755006805366518
+ Normed ED: 0.02846389084921195
+ Normed ED: 0.20491962037575054
+ Normed ED: 0.010680907877169559
+ Normed ED: 0.003011040481766477
+ Normed ED: 0.00621414913957935
+ Normed ED: 0.00721336370539104
+ Normed ED: 0.006067500948047023
+ Normed ED: 0.005647944775651083
+ Normed ED: 0.009139615505830444
+ Normed ED: 0.009060022650056626
+ Normed ED: 0.010393700787401575
+ Normed ED: 0.0049410870391486126
+ Normed ED: 0.011462205700123915
+ Normed ED: 0.010566037735849057
+ Normed ED: 0.0037476577139287947
+ Normed ED: 0.004725897920604915
+ Normed ED: 0.007210031347962382
+ Normed ED: 0.006905210295040804
+ Normed ED: 0.010071942446043165
+ Normed ED: 0.01098556183301946
+ Normed ED: 0.007601672367920942
+ Normed ED: 0.005272407732864675
+ Normed ED: 0.00558659217877095
+ Normed ED: 0.671359261910443
+ Normed ED: 0.0046439628482972135
+ Normed ED: 0.13317711384495215
+ Normed ED: 0.8418318473214944
+ Normed ED: 0.531926525256943
+ Normed ED: 0.000550357732526142
+ Normed ED: 0.0
+ Normed ED: 0.19755747126436782
+ Normed ED: 0.0
+ Normed ED: 0.0002333177788147457
+ Normed ED: 0.0
+ Normed ED: 0.0
+ Normed ED: 0.0004682744088035589
+ Normed ED: 0.0
+ Normed ED: 0.0
+ Normed ED: 0.19874551971326165
+ Normed ED: 0.000591016548463357
+ Normed ED: 0.0
+ Normed ED: 0.001098901098901099
+ Normed ED: 0.06779315960912052
+ Normed ED: 0.08635718629637137
+ Normed ED: 0.07528409090909091
+ Normed ED: 0.0
+ Normed ED: 0.07887266828872669
+ Normed ED: 0.0
+ Normed ED: 0.0
+ Normed ED: 0.001579778830963665
+ Normed ED: 0.004140215291195142
+ Normed ED: 0.00315955766192733
+ Normed ED: 0.0024944567627494456
+ Normed ED: 0.001932633903920486
+ Normed ED: 0.002482073910645339
+ Normed ED: 0.00387382401770891
+ Normed ED: 0.004123144584936778
+ Normed ED: 0.0023631350925561244
+ Normed ED: 0.0015741833923652105
+ Normed ED: 0.0019904458598726115
+ Normed ED: 0.0035961272475795295
+ Normed ED: 0.00249514832270585
+ Normed ED: 0.001190003966679889
+ Normed ED: 0.005132254243979471
+ Normed ED: 0.001941747572815534
+ Normed ED: 0.002370604504148558
+ Normed ED: 0.004418668876001105
+ Normed ED: 0.00373366521468575
+ Normed ED: 0.00234009360374415
+ Normed ED: 0.002317497103128621
+ Normed ED: 0.003738317757009346
+ Normed ED: 0.004649360712901976
+ Normed ED: 0.0025
+ Normed ED: 0.01152073732718894
+ Normed ED: 0.0011265490048817123
+ Normed ED: 0.04983748645720477
+ Normed ED: 0.005691768826619965
+ Normed ED: 0.002825999192571659
+ Normed ED: 0.4843876177658143
+ Normed ED: 0.011421628189550425
+ Normed ED: 0.006132282084975909
+ Normed ED: 0.0017743080198722497
+ Normed ED: 0.5226332848999665
+ Normed ED: 0.5722672064777328
+ Normed ED: 0.35547391623806024
+ Normed ED: 0.0016066838046272494
+ Normed ED: 0.5859878835255032
+ Normed ED: 0.001903311762466692
+ Normed ED: 0.0030807147258163892
+ Normed ED: 0.1168617785993017
+ Normed ED: 0.005696530295183843
+ Normed ED: 0.002003434459072696
+ Normed ED: 0.0020460358056265983
+ Normed ED: 0.051869991095280496
+ Normed ED: 0.005076142131979695
+ Normed ED: 0.22867160109076742
+ Normed ED: 0.001583531274742676
+ Normed ED: 0.4674993627326026
+ Normed ED: 0.14365300437723835
+ Normed ED: 0.3713471133285816
+ Normed ED: 0.0025044722719141325
+ Normed ED: 0.003415559772296015
+ Normed ED: 0.8224523916323452
+ Normed ED: 0.625738616614529
+ Normed ED: 0.8355677052127022
+ Normed ED: 0.8689042745334136
+ Normed ED: 0.2750775594622544
+ Normed ED: 0.03834355828220859
+ Normed ED: 0.14019963702359348
+ Normed ED: 0.03489137590520079
+ Normed ED: 0.046511627906976744
+ Normed ED: 0.05343022013250694
+ Normed ED: 0.23458752870517577
+ Normed ED: 0.00422654268808115
+ Normed ED: 0.002258469259723965
+ Normed ED: 0.0017570281124497991
+ Normed ED: 0.0016345210853220007
+ Normed ED: 0.0052440500201694235
+ Normed ED: 0.002403020940611054
+ Normed ED: 0.8147368421052632
+ Normed ED: 0.4838410749449786
+ Normed ED: 0.46399606782993363
+ Normed ED: 0.5137280137280137
+ Normed ED: 0.22589144563499033
+ Normed ED: 0.003219575016097875
+ Normed ED: 0.003575685339690107
+ Normed ED: 0.00267538644470868
+ Normed ED: 0.00267379679144385
+ Normed ED: 0.001201923076923077
+ Normed ED: 0.7265649926616042
+ Normed ED: 0.34723467862481316
+ Normed ED: 0.7314229003845677
+ Normed ED: 0.7881910529400273
+ Normed ED: 0.7208780753024331
+ Normed ED: 0.0037835792659856224
+ Normed ED: 0.002224694104560623
+ Normed ED: 0.0015180265654648956
+ Normed ED: 0.43419775343225625
+ Normed ED: 0.2735982966643009
+ Normed ED: 0.27829017382050375
+ Normed ED: 0.0013489208633093526
+ Normed ED: 0.4971597364235401
+ Normed ED: 0.09767441860465116
+ Normed ED: 0.2674380165289256
+ Normed ED: 0.0006793478260869565
+ Normed ED: 0.0061162079510703364
+Pushing model to the hub, epoch 7
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+/home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:399: UserWarning: `num_beams` is set to 1. However, `early_stopping` is set to `True` -- this flag is only used in beam-based generation modes. You should set `num_beams>1` or unset `early_stopping`.
+  warnings.warn(
+ Normed ED: 0.1337099811676083
+ Normed ED: 0.464349059950337
+ Normed ED: 0.0124282982791587
+ Normed ED: 0.14209591474245115
+ Normed ED: 0.4062002028103723
+ Normed ED: 0.1721808014911463
+ Normed ED: 0.34575569358178054
+ Normed ED: 0.27751598788286774
+ Normed ED: 0.09165687426556991
+ Normed ED: 0.05013673655423884
+ Normed ED: 0.329467680608365
+ Normed ED: 0.20487483530961792
+ Normed ED: 0.3024628536535722
+ Normed ED: 0.014925373134328358
+ Normed ED: 0.2264280798348245
+ Normed ED: 0.005287009063444109
+ Normed ED: 0.35083333333333333
+ Normed ED: 0.0013306719893546241
+ Normed ED: 0.004734350341925302
+ Normed ED: 0.002723735408560311
+ Normed ED: 0.3615972001272669
+ Normed ED: 0.7969652816158368
+ Normed ED: 0.414614773629865
+ Normed ED: 0.0005303632988597189
+ Normed ED: 0.5740776699029126
+ Normed ED: 0.004935834155972359
+ Normed ED: 0.008563273073263558
+ Normed ED: 0.009328358208955223
+ Normed ED: 0.008466603951081843
+ Normed ED: 0.00945179584120983
+ Normed ED: 0.5152573957605404
+ Normed ED: 0.7113144758735441
+ Normed ED: 0.006753246753246753
+ Normed ED: 0.07819761567993534
+ Normed ED: 0.4336613927993024
+ Normed ED: 0.23929747530186607
+ Normed ED: 0.22277053225237928
+ Normed ED: 0.001924001924001924
+ Normed ED: 0.0016863406408094434
+ Normed ED: 0.0022404779686333084
+ Normed ED: 0.0033407572383073497
+ Normed ED: 0.44313725490196076
+ Normed ED: 0.0056022408963585435
+ Normed ED: 0.6234500210881485
+ Normed ED: 0.6364793888269935
+ Normed ED: 0.006244218316373728
+ Normed ED: 0.5709952606635071
+ Normed ED: 0.27395456042146854
+ Normed ED: 0.14994320333207117
+ Normed ED: 0.597155522718877
+ Normed ED: 0.6560801366671843
+ Normed ED: 0.0018214936247723133
+ Normed ED: 0.28012718600953895
+ Normed ED: 0.26102699144173797
+ Normed ED: 0.5747312339453905
+ Normed ED: 0.0018298261665141812
+ Normed ED: 0.001838235294117647
+ Normed ED: 0.0018198362147406734
+ Normed ED: 0.0018281535648994515
+ Normed ED: 0.0027522935779816515
+ Normed ED: 0.0018604651162790699
+ Normed ED: 0.001834862385321101
+ Normed ED: 0.0027347310847766638
+ Normed ED: 0.0018248175182481751
+ Normed ED: 0.0018535681186283596
+ Normed ED: 0.0018365472910927456
+ Normed ED: 0.0018331805682859762
+ Normed ED: 0.001838235294117647
+ Normed ED: 0.0018484288354898336
+ Normed ED: 0.0018484288354898336
+ Normed ED: 0.0018433179723502304
+ Normed ED: 0.001841620626151013
+ Normed ED: 0.004545454545454545
+ Normed ED: 0.0018231540565177757
+ Normed ED: 0.0018315018315018315
+ Normed ED: 0.0018433179723502304
+ Normed ED: 0.0027472527472527475
+ Normed ED: 0.00272975432211101
+ Normed ED: 0.0018365472910927456
+ Normed ED: 0.0018433179723502304
+ Normed ED: 0.0018501387604070306
+ Normed ED: 0.0018315018315018315
+ Normed ED: 0.0027522935779816515
+ Normed ED: 0.001834862385321101
+ Normed ED: 0.003683241252302026
+ Normed ED: 0.0018281535648994515
+ Normed ED: 0.0018148820326678765
+ Normed ED: 0.0018281535648994515
+ Normed ED: 0.0018331805682859762
+ Normed ED: 0.0018315018315018315
+ Normed ED: 0.0018198362147406734
+ Normed ED: 0.0018331805682859762
+ Normed ED: 0.0027347310847766638
+ Normed ED: 0.003683241252302026
+ Normed ED: 0.0025076623014767345
+ Normed ED: 0.003336113427856547
+ Normed ED: 0.0018812147272238647
+ Normed ED: 0.002108433734939759
+ Normed ED: 0.0026347305389221557
+ Normed ED: 0.08021621621621622
+ Normed ED: 0.00391684242241639
+ Normed ED: 0.0029069767441860465
+ Normed ED: 0.002661698163428267
+ Normed ED: 0.19755006805366518
+ Normed ED: 0.027993413314514232
+ Normed ED: 0.20491962037575054
+ Normed ED: 0.008681135225375626
+ Normed ED: 0.00667779632721202
+ Normed ED: 0.0076481835564053535
+ Normed ED: 0.008352315869400152
+ Normed ED: 0.006067500948047023
+ Normed ED: 0.007841907151819323
+ Normed ED: 0.006933501418216199
+ Normed ED: 0.009815024537561345
+ Normed ED: 0.010075566750629723
+ Normed ED: 0.005321170657544659
+ Normed ED: 0.003425724073497353
+ Normed ED: 0.011667293940534437
+ Normed ED: 0.004683109584764283
+ Normed ED: 0.0034667507091080997
+ Normed ED: 0.006896551724137931
+ Normed ED: 0.004080351537978657
+ Normed ED: 0.004800768122899664
+ Normed ED: 0.010995915802701853
+ Normed ED: 0.0068415051311288486
+ Normed ED: 0.005274261603375527
+ Normed ED: 0.00439297124600639
+ Normed ED: 0.670722977809592
+ Normed ED: 0.005413766434648105
+ Normed ED: 0.13317711384495215
+ Normed ED: 0.8419055338589639
+ Normed ED: 0.5321452000874699
+ Normed ED: 0.000275178866263071
+ Normed ED: 0.0
+ Normed ED: 0.19145114942528735
+ Normed ED: 0.0
+ Normed ED: 0.0002333177788147457
+ Normed ED: 0.0
+ Normed ED: 0.0
+ Normed ED: 0.00023413720440177945
+ Normed ED: 0.0
+ Normed ED: 0.0
+ Normed ED: 0.19874551971326165
+ Normed ED: 0.000591016548463357
+ Normed ED: 0.000591715976331361
+ Normed ED: 0.002197802197802198
+ Normed ED: 0.06697882736156352
+ Normed ED: 0.08655990269612812
+ Normed ED: 0.07406655844155845
+ Normed ED: 0.00023364485981308412
+ Normed ED: 0.07887266828872669
+ Normed ED: 0.0
+ Normed ED: 0.0
+ Normed ED: 0.001579778830963665
+ Normed ED: 0.004416229643941485
+ Normed ED: 0.002764612954186414
+ Normed ED: 0.002770850651149903
+ Normed ED: 0.0033140016570008283
+ Normed ED: 0.002206287920573635
+ Normed ED: 0.0024903154399557276
+ Normed ED: 0.004120879120879121
+ Normed ED: 0.0023631350925561244
+ Normed ED: 0.0015741833923652105
+ Normed ED: 0.002785515320334262
+ Normed ED: 0.004702627939142462
+ Normed ED: 0.003048780487804878
+ Normed ED: 0.001190003966679889
+ Normed ED: 0.005527043031977891
+ Normed ED: 0.002219140083217753
+ Normed ED: 0.002370604504148558
+ Normed ED: 0.004142502071251036
+ Normed ED: 0.00373366521468575
+ Normed ED: 0.00234009360374415
+ Normed ED: 0.002317497103128621
+ Normed ED: 0.003738317757009346
+ Normed ED: 0.00889060688055663
+ Normed ED: 0.0025
+ Normed ED: 0.008448540706605223
+ Normed ED: 0.001877581674802854
+ Normed ED: 0.04962080173347779
+ Normed ED: 0.009619588981198076
+ Normed ED: 0.002825999192571659
+ Normed ED: 0.448721399730821
+ Normed ED: 0.018226002430133656
+ Normed ED: 0.0056967572304995615
+ Normed ED: 0.0028388928317956
+ Normed ED: 0.5214038225103387
+ Normed ED: 0.569838056680162
+ Normed ED: 0.35547391623806024
+ Normed ED: 0.0016066838046272494
+ Normed ED: 0.5859878835255032
+ Normed ED: 0.001903311762466692
+ Normed ED: 0.0030807147258163892
+ Normed ED: 0.11850482645307045
+ Normed ED: 0.005696530295183843
+ Normed ED: 0.0022896393817973667
+ Normed ED: 0.002556237218813906
+ Normed ED: 0.05120213713268032
+ Normed ED: 0.004441624365482234
+ Normed ED: 0.2251655629139073
+ Normed ED: 0.0011876484560570072
+ Normed ED: 0.46711700229416264
+ Normed ED: 0.14325507361719061
+ Normed ED: 0.37177476835352813
+ Normed ED: 0.0025044722719141325
+ Normed ED: 0.0018975332068311196
+ Normed ED: 0.8218814990009379
+ Normed ED: 0.6279110184219673
+ Normed ED: 0.835380467345716
+ Normed ED: 0.8685430463576159
+ Normed ED: 0.27163047225094794
+ Normed ED: 0.03803680981595092
+ Normed ED: 0.13815789473684212
+ Normed ED: 0.0399737876802097
+ Normed ED: 0.04783451842275371
+ Normed ED: 0.05236161572985681
+ Normed ED: 0.2409468291821233
+ Normed ED: 0.005067567567567568
+ Normed ED: 0.0017565872020075283
+ Normed ED: 0.004009020295665247
+ Normed ED: 0.0016345210853220007
+ Normed ED: 0.003227107704719645
+ Normed ED: 0.003089598352214212
+ Normed ED: 0.8131350114416476
+ Normed ED: 0.4836094057685625
+ Normed ED: 0.46399606782993363
+ Normed ED: 0.5122265122265123
+ Normed ED: 0.22571579132267697
+ Normed ED: 0.003219575016097875
+ Normed ED: 0.004370282081843465
+ Normed ED: 0.00267538644470868
+ Normed ED: 0.00267379679144385
+ Normed ED: 0.001201923076923077
+ Normed ED: 0.7265649926616042
+ Normed ED: 0.34723467862481316
+ Normed ED: 0.7314229003845677
+ Normed ED: 0.7881910529400273
+ Normed ED: 0.7209460377871415
+ Normed ED: 0.0018917896329928112
+ Normed ED: 0.0027808676307007787
+ Normed ED: 0.0015180265654648956
+ Normed ED: 0.43170156705033974
+ Normed ED: 0.2735982966643009
+ Normed ED: 0.27509755232351896
+ Normed ED: 0.002696629213483146
+ Normed ED: 0.4970461258804817
+ Normed ED: 0.09241658240647119
+ Normed ED: 0.2674380165289256
+ Normed ED: 0.0006793478260869565
+ Normed ED: 0.0050968399592252805
+Pushing model to the hub, epoch 8
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+/home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:399: UserWarning: `num_beams` is set to 1. However, `early_stopping` is set to `True` -- this flag is only used in beam-based generation modes. You should set `num_beams>1` or unset `early_stopping`.
+  warnings.warn(
+ Normed ED: 0.1916195856873823
+ Normed ED: 0.415040794608017
+ Normed ED: 0.0124282982791587
+ Normed ED: 0.14209591474245115
+ Normed ED: 0.41822396059684197
+ Normed ED: 0.07440839229080264
+ Normed ED: 0.37376237623762376
+ Normed ED: 0.27532817233254797
+ Normed ED: 0.04492108458114124
+ Normed ED: 0.12215669755686605
+ Normed ED: 0.555703422053232
+ Normed ED: 0.21277997364953888
+ Normed ED: 0.25951557093425603
+ Normed ED: 0.0014925373134328358
+ Normed ED: 0.2264280798348245
+ Normed ED: 0.0037764350453172208
+ Normed ED: 0.3516666666666667
+ Normed ED: 0.00033266799733865603
+ Normed ED: 0.003682272488164124
+ Normed ED: 0.002723735408560311
+ Normed ED: 0.35682468978682785
+ Normed ED: 0.7958599206149827
+ Normed ED: 0.4142176330420969
+ Normed ED: 0.0005303632988597189
+ Normed ED: 0.5740776699029126
+ Normed ED: 0.0019743336623889436
+ Normed ED: 0.008563273073263558
+ Normed ED: 0.008403361344537815
+ Normed ED: 0.008466603951081843
+ Normed ED: 0.00945179584120983
+ Normed ED: 0.5123456790123457
+ Normed ED: 0.7104132002218525
+ Normed ED: 0.010931806350858927
+ Normed ED: 0.08729036168923014
+ Normed ED: 0.431169801918525
+ Normed ED: 0.2367361873399195
+ Normed ED: 0.22347550229115262
+ Normed ED: 0.001924001924001924
+ Normed ED: 0.0016863406408094434
+ Normed ED: 0.0022404779686333084
+ Normed ED: 0.0033407572383073497
+ Normed ED: 0.44164976335361733
+ Normed ED: 0.0056022408963585435
+ Normed ED: 0.6257275411218896
+ Normed ED: 0.6366385484641095
+ Normed ED: 0.008314087759815243
+ Normed ED: 0.5682464454976304
+ Normed ED: 0.26605202502469544
+ Normed ED: 0.14161302536917833
+ Normed ED: 0.5942002216475804
+ Normed ED: 0.651964590774965
+ Normed ED: 0.0024286581663630845
+ Normed ED: 0.28155802861685214
+ Normed ED: 0.26695194206714945
+ Normed ED: 0.5718770811530778
+ Normed ED: 0.0018298261665141812
+ Normed ED: 0.004595588235294118
+ Normed ED: 0.0018198362147406734
+ Normed ED: 0.002742230347349177
+ Normed ED: 0.0018365472910927456
+ Normed ED: 0.0018604651162790699
+ Normed ED: 0.001834862385321101
+ Normed ED: 0.0054694621695533276
+ Normed ED: 0.002737226277372263
+ Normed ED: 0.0018535681186283596
+ Normed ED: 0.0027548209366391185
+ Normed ED: 0.0036663611365719525
+ Normed ED: 0.001838235294117647
+ Normed ED: 0.0018484288354898336
+ Normed ED: 0.0018484288354898336
+ Normed ED: 0.0027649769585253456
+ Normed ED: 0.001841620626151013
+ Normed ED: 0.0018181818181818182
+ Normed ED: 0.0018231540565177757
+ Normed ED: 0.0018315018315018315
+ Normed ED: 0.0018433179723502304
+ Normed ED: 0.0027472527472527475
+ Normed ED: 0.003639672429481347
+ Normed ED: 0.0018365472910927456
+ Normed ED: 0.0018433179723502304
+ Normed ED: 0.0027752081406105457
+ Normed ED: 0.0018315018315018315
+ Normed ED: 0.0018365472910927456
+ Normed ED: 0.001834862385321101
+ Normed ED: 0.003683241252302026
+ Normed ED: 0.0018281535648994515
+ Normed ED: 0.0018148820326678765
+ Normed ED: 0.0018281535648994515
+ Normed ED: 0.0018331805682859762
+ Normed ED: 0.0018315018315018315
+ Normed ED: 0.0018198362147406734
+ Normed ED: 0.0018331805682859762
+ Normed ED: 0.0027347310847766638
+ Normed ED: 0.004604051565377533
+ Normed ED: 0.0011148272017837235
+ Normed ED: 0.003336113427856547
+ Normed ED: 0.0018812147272238647
+ Normed ED: 0.002108433734939759
+ Normed ED: 0.0016766467065868263
+ Normed ED: 0.08216216216216216
+ Normed ED: 0.00391684242241639
+ Normed ED: 0.0029069767441860465
+ Normed ED: 0.0031940377961139207
+ Normed ED: 0.19755006805366518
+ Normed ED: 0.02846389084921195
+ Normed ED: 0.20491962037575054
+ Normed ED: 0.008681135225375626
+ Normed ED: 0.0033456005352960855
+ Normed ED: 0.005741626794258373
+ Normed ED: 0.006074411541381929
+ Normed ED: 0.005688282138794084
+ Normed ED: 0.008785691873235017
+ Normed ED: 0.006618342262842736
+ Normed ED: 0.007172517931294828
+ Normed ED: 0.009439899307740718
+ Normed ED: 0.0068415051311288486
+ Normed ED: 0.004360012457178449
+ Normed ED: 0.009423294383716547
+ Normed ED: 0.0034342803621604744
+ Normed ED: 0.004408060453400504
+ Normed ED: 0.17899686520376176
+ Normed ED: 0.00502828409805154
+ Normed ED: 0.0038424591738712775
+ Normed ED: 0.008796732642161484
+ Normed ED: 0.007595898214963919
+ Normed ED: 0.004219409282700422
+ Normed ED: 0.003194888178913738
+ Normed ED: 0.6706434422969856
+ Normed ED: 0.0046439628482972135
+ Normed ED: 0.13317711384495215
+ Normed ED: 0.842458182889986
+ Normed ED: 0.5315985130111525
+ Normed ED: 0.000550357732526142
+ Normed ED: 0.0
+ Normed ED: 0.19342672413793102
+ Normed ED: 0.0
+ Normed ED: 0.0006999533364442371
+ Normed ED: 0.0
+ Normed ED: 0.0
+ Normed ED: 0.0004682744088035589
+ Normed ED: 0.0
+ Normed ED: 0.0
+ Normed ED: 0.19874551971326165
+ Normed ED: 0.000591016548463357
+ Normed ED: 0.000591715976331361
+ Normed ED: 0.0008241758241758242
+ Normed ED: 0.06697882736156352
+ Normed ED: 0.08554632069734441
+ Normed ED: 0.07406655844155845
+ Normed ED: 0.0
+ Normed ED: 0.07887266828872669
+ Normed ED: 0.0
+ Normed ED: 0.0
+ Normed ED: 0.0019747235387045812
+ Normed ED: 0.0035881865857024567
+ Normed ED: 0.002764612954186414
+ Normed ED: 0.0024944567627494456
+ Normed ED: 0.0022093344380005524
+ Normed ED: 0.003309431880860452
+ Normed ED: 0.002213613724405091
+ Normed ED: 0.0035743744844652188
+ Normed ED: 0.0015754233950374162
+ Normed ED: 0.001966955153422502
+ Normed ED: 0.0019904458598726115
+ Normed ED: 0.002767017155506364
+ Normed ED: 0.00249514832270585
+ Normed ED: 0.0015866719555731853
+ Normed ED: 0.005527043031977891
+ Normed ED: 0.001941747572815534
+ Normed ED: 0.0015816528272044287
+ Normed ED: 0.0038663352665009665
+ Normed ED: 0.0043559427504667085
+ Normed ED: 0.00234009360374415
+ Normed ED: 0.002317497103128621
+ Normed ED: 0.003738317757009346
+ Normed ED: 0.0027131782945736434
+ Normed ED: 0.0025
+ Normed ED: 0.007692307692307693
+ Normed ED: 0.0026286143447239955
+ Normed ED: 0.05005417118093174
+ Normed ED: 0.005253940455341506
+ Normed ED: 0.002825999192571659
+ Normed ED: 0.4508748317631225
+ Normed ED: 0.034390893678856865
+ Normed ED: 0.005253940455341506
+ Normed ED: 0.0035486160397444995
+ Normed ED: 0.5203978987370068
+ Normed ED: 0.5669028340080972
+ Normed ED: 0.35547391623806024
+ Normed ED: 0.02602827763496144
+ Normed ED: 0.5859878835255032
+ Normed ED: 0.001903311762466692
+ Normed ED: 0.004313000616142945
+ Normed ED: 0.11768330252618607
+ Normed ED: 0.007763975155279503
+ Normed ED: 0.006008583690987125
+ Normed ED: 0.0025575447570332483
+ Normed ED: 0.05120213713268032
+ Normed ED: 0.0038071065989847717
+ Normed ED: 0.22029606544604596
+ Normed ED: 0.0011876484560570072
+ Normed ED: 0.46953861840428246
+ Normed ED: 0.14305610823716675
+ Normed ED: 0.3699215965787598
+ Normed ED: 0.0025044722719141325
+ Normed ED: 0.0018975332068311196
+ Normed ED: 0.821963055091139
+ Normed ED: 0.6256517205422315
+ Normed ED: 0.8354928100659077
+ Normed ED: 0.8686634557495485
+ Normed ED: 0.27231988969320925
+ Normed ED: 0.0009202453987730061
+ Normed ED: 0.1456442831215971
+ Normed ED: 0.028795811518324606
+ Normed ED: 0.08698495748855462
+ Normed ED: 0.053857661893567
+ Normed ED: 0.2308779367602897
+ Normed ED: 0.004651162790697674
+ Normed ED: 0.0020075282308657464
+ Normed ED: 0.0015060240963855422
+ Normed ED: 0.0016345210853220007
+ Normed ED: 0.0028237192416296895
+ Normed ED: 0.003089598352214212
+ Normed ED: 0.8135469107551487
+ Normed ED: 0.4818718869454419
+ Normed ED: 0.46399606782993363
+ Normed ED: 0.5101887601887601
+ Normed ED: 0.22589144563499033
+ Normed ED: 0.003219575016097875
+ Normed ED: 0.0031783869686134287
+ Normed ED: 0.00267538644470868
+ Normed ED: 0.00267379679144385
+ Normed ED: 0.001201923076923077
+ Normed ED: 0.7265649926616042
+ Normed ED: 0.34723467862481316
+ Normed ED: 0.7314229003845677
+ Normed ED: 0.7881910529400273
+ Normed ED: 0.7210819627565583
+ Normed ED: 0.003026863412788498
+ Normed ED: 0.002224694104560623
+ Normed ED: 0.0015180265654648956
+ Normed ED: 0.4319789210927749
+ Normed ED: 0.2727111426543648
+ Normed ED: 0.27829017382050375
+ Normed ED: 0.0013489208633093526
+ Normed ED: 0.4971597364235401
+ Normed ED: 0.09241658240647119
+ Normed ED: 0.2674380165289256
+ Normed ED: 0.0006793478260869565
+ Normed ED: 0.003567787971457696
+Pushing model to the hub, epoch 9
+`Trainer.fit` stopped: `max_epochs=10` reached.
+Pushing model to the hub after training
+cuda
+/home/sebastian/anaconda3/envs/pt/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:399: UserWarning: `num_beams` is set to 1. However, `early_stopping` is set to `True` -- this flag is only used in beam-based generation modes. You should set `num_beams>1` or unset `early_stopping`.
+  warnings.warn(
+{'accuracies': [0.7805486284289277, 0.4200385356454721, 0.9708520179372198, 0.725, 0.7197298601061264, 0.6428571428571428, 0.5479041916167664, 0.9647630619684082, 0.9085439229843562, 0.78125, 0.38858530661809354, 0.6775862068965517, 0.6757475083056479, 0.980722891566265, 0.9650900900900901, 0.9906716417910448, 0.6021180030257186, 0.996551724137931, 0.9798449612403101, 0.9853768278965129, 0.9042105263157895, 0.4028490972337253, 0.6459510357815443, 0.9891402714932127, 0.6897711978465679, 0.9877551020408163, 0.9800443458980045, 0.9808917197452229, 0.980561555075594, 0.9781181619256017, 0.811504080839487, 0.5363699744364396, 0.9488536155202822, 0.982646420824295, 0.7425522454424189, 0.9659090909090909, 0.9843930635838151, 0.9744816586921851, 0.9911971830985915, 0.9887387387387387, 0.9843260188087775, 0.7035175879396984, 0.9813486370157819, 0.6053586380128384, 0.5743790120011164, 0.966824644549763, 0.7132820341251255, 0.9175314036045876, 0.9742233972240582, 0.630547903275176, 0.5401797175866496, 0.979381443298969, 0.9243093922651934, 0.96126568466994, 0.6353937872607468, 0.9943181818181818, 0.9855907780979827, 0.994413407821229, 0.9915014164305949, 0.9942528735632183, 0.9940119760479041, 0.994269340974212, 0.9831460674157303, 0.9915492957746479, 0.9940828402366864, 0.9913793103448276, 0.9885714285714285, 0.9942363112391931, 0.9941348973607038, 0.9941348973607038, 0.9912790697674418, 0.9942028985507246, 0.9944289693593314, 0.9943820224719101, 0.9943019943019943, 0.9941860465116279, 0.9914529914529915, 0.9888268156424581, 0.9942528735632183, 0.9941860465116279, 0.9911764705882353, 0.9943019943019943, 0.9942528735632183, 0.994269340974212, 0.9884057971014493, 0.9943342776203966, 0.9944598337950139, 0.9943342776203966, 0.9942857142857143, 0.9943019943019943, 0.994413407821229, 0.9942857142857143, 0.9915730337078652, 0.9855072463768116, 0.9895196506550218, 0.9802224969097652, 0.987331081081081, 0.986351228389445, 0.9886535552193646, 0.9862637362637363, 0.9808743169398907, 0.9816849816849816, 0.9852459016393442, 0.9873341375150784, 0.9864091559370529, 0.9886769964243146, 0.963855421686747, 0.9790794979079498, 0.9665144596651446, 0.967741935483871, 0.9592088998763906, 0.9605809128630706, 0.9673684210526315, 0.9646772228989038, 0.9579390115667719, 0.9651307596513076, 0.9757085020242915, 0.9574209245742092, 0.9785495403472931, 0.9747368421052631, 0.7890382626680454, 0.97288842544317, 0.9722222222222222, 0.9602510460251046, 0.9613947696139477, 0.9775784753363229, 0.9854545454545455, 0.5820206409560023, 0.9791666666666666, 0.9938385705483672, 0.2641362277395034, 0.7556137724550898, 0.9852164730728616, 0.971830985915493, 0.9883561643835617, 0.9846153846153847, 0.9866785079928952, 0.9800332778702163, 0.984516129032258, 0.9873987398739874, 0.972027972027972, 0.9846547314578005, 0.9918478260869565, 0.969626168224299, 0.9694117647058823, 0.9842767295597484, 0.9898278560250391, 0.9884526558891455, 0.9891808346213292, 0.9892857142857143, 0.9907550077041603, 0.9844961240310077, 0.971830985915493, 0.9777486910994765, 0.9765258215962441, 0.975130890052356, 0.98, 0.9811853245531514, 0.9775280898876404, 0.9810606060606061, 0.9767873723305478, 0.980544747081712, 0.9780077619663649, 0.9771505376344086, 0.9791469194312796, 0.9799809342230696, 0.9787516600265604, 0.9660130718954248, 0.9818529130850048, 0.9789750328515112, 0.9755409219190969, 0.9759704251386322, 0.9847522236340533, 0.9852216748768473, 0.9777365491651206, 0.9838107098381071, 0.9871611982881597, 0.98046875, 0.9757653061224489, 0.9832572298325724, 0.9816933638443935, 0.9878987898789879, 0.6406181015452539, 0.8961510530137982, 0.9801980198019802, 0.9854771784232366, 0.7389458790237, 0.6400255754475703, 0.7650688182249644, 0.9573604060913705, 0.709603408718453, 0.9919632606199771, 0.9844290657439446, 0.9512658227848101, 0.9755747126436781, 0.9800520381613183, 0.9830364715860899, 0.986822840409956, 0.9826388888888888, 0.9869614512471655, 0.992018244013683, 0.7143971907920406, 0.9188118811881189, 0.61671469740634, 0.9883103081827843, 0.9775132275132276, 0.3008373205741627, 0.6565176022835395, 0.28618466181917956, 0.23783783783783785, 0.9697146185206756, 0.995136186770428, 0.9538239538239538, 0.9254237288135593, 0.8564102564102565, 0.9773082942097027, 0.9225306649451259, 0.9781491002570694, 0.9884583676834295, 0.9900990099009901, 0.988421052631579, 0.9881465517241379, 0.9875717017208413, 0.32146693263771675, 0.7970727848101266, 0.7877941763063423, 0.7919854280510018, 0.9924462521789658, 0.9793621013133208, 0.984144960362401, 0.9795719844357976, 0.9796116504854369, 0.9810606060606061, 0.5040650406504066, 0.9878306878306878, 0.485565443889733, 0.4083778658851922, 0.4839160839160839, 0.9807692307692307, 0.9806138933764136, 0.9854368932038835, 0.7364588074647247, 0.9895833333333334, 0.991907514450867, 0.9834586466165414, 0.7223332001598082, 0.9886605244507441, 0.9611819235225956, 0.9913860610806577, 0.9766355140186916], 'mean_accuracy': 0.9067299335819371} length : 250
+Model accuracy dictionary saved to /home/sebastian/Documents/Hauptprojekt/Arrays/DonutInfoExtraction/model_accuracies_after.pkl
+Model accuracy dictionary saved to /home/sebastian/Documents/Hauptprojekt/Arrays/DonutInfoExtraction/model_accuracies_after.pkl
+cuda
+{'accuracies': [0.8192019950124688, 0.5134874759152216, 0.6905829596412556, 0.975, 0.45200192957067054, 0.4486356340288925, 0.5464071856287425, 0.9678007290400972, 0.8592057761732852, 0.7678571428571428, 0.3788706739526412, 0.5948275862068966, 0.7408637873754154, 0.9084337349397591, 0.9667792792792793, 0.9906716417910448, 0.5869894099848714, 0.9954022988505747, 0.9767441860465116, 0.9853768278965129, 0.8668421052631579, 0.37949312572469773, 0.6209981167608286, 0.9891402714932127, 0.721399730820996, 0.9857142857142858, 0.9800443458980045, 0.9787685774946921, 0.978401727861771, 0.9781181619256017, 0.7951807228915663, 0.5554264466651173, 0.9382716049382716, 0.982646420824295, 0.663405958203646, 0.9558080808080808, 0.9820809248554914, 0.9744816586921851, 0.9911971830985915, 0.9887387387387387, 0.9843260188087775, 0.6898126998629511, 0.9827833572453372, 0.6553167736533632, 0.5958693831984371, 0.966824644549763, 0.7039143526262964, 0.46750409612233756, 0.969596827495043, 0.6317722681359045, 0.5519897304236201, 0.977319587628866, 0.9149171270718233, 0.9547190398254228, 0.6206463759021024, 0.9943181818181818, 0.9942363112391931, 0.994413407821229, 0.9915014164305949, 0.9942528735632183, 0.9940119760479041, 0.994269340974212, 0.9943820224719101, 0.9943661971830986, 0.9940828402366864, 0.9942528735632183, 0.9885714285714285, 0.9942363112391931, 0.9941348973607038, 0.9941348973607038, 0.9941860465116279, 0.9942028985507246, 0.9832869080779945, 0.9943820224719101, 0.9943019943019943, 0.9941860465116279, 0.9914529914529915, 0.9916201117318436, 0.9942528735632183, 0.9912790697674418, 0.9941176470588236, 0.9943019943019943, 0.9942528735632183, 0.994269340974212, 0.9884057971014493, 0.9943342776203966, 0.9944598337950139, 0.9943342776203966, 0.9942857142857143, 0.9943019943019943, 0.994413407821229, 0.9942857142857143, 0.9887640449438202, 0.9855072463768116, 0.988646288209607, 0.9814585908529048, 0.987331081081081, 0.986351228389445, 0.9856278366111951, 0.9828296703296703, 0.9799635701275046, 0.9816849816849816, 0.9860655737704918, 0.9879372738238842, 0.9864091559370529, 0.9886769964243146, 0.9568273092369478, 0.9801255230125523, 0.964992389649924, 0.9640198511166254, 0.9678615574783683, 0.970954356846473, 0.9589473684210527, 0.9598051157125457, 0.9547844374342797, 0.9713574097135741, 0.9524291497975709, 0.9537712895377128, 0.9775280898876404, 0.9736842105263158, 0.9658738366080661, 0.9666319082377477, 0.9521604938271605, 0.950836820083682, 0.962640099626401, 0.9742152466367713, 0.9781818181818182, 0.566811515480717, 0.9791666666666666, 0.9938385705483672, 0.2890939815416612, 0.7462574850299402, 0.9852164730728616, 0.971830985915493, 0.9801369863013698, 0.9846153846153847, 0.9884547069271759, 0.9800332778702163, 0.984516129032258, 0.9873987398739874, 0.972027972027972, 0.9846547314578005, 0.9918478260869565, 0.969626168224299, 0.971764705882353, 0.9832285115303984, 0.9898278560250391, 0.9884526558891455, 0.990726429675425, 0.9892857142857143, 0.9907550077041603, 0.9844961240310077, 0.971830985915493, 0.9790575916230366, 0.9746478873239437, 0.9738219895287958, 0.98, 0.9821260583254939, 0.9803370786516854, 0.9753787878787878, 0.9749303621169917, 0.9766536964980544, 0.9793014230271668, 0.9771505376344086, 0.976303317535545, 0.9799809342230696, 0.9800796812749004, 0.9673202614379085, 0.9818529130850048, 0.9763469119579501, 0.973659454374412, 0.977818853974122, 0.9847522236340533, 0.9852216748768473, 0.9777365491651206, 0.9775840597758406, 0.9871611982881597, 0.970703125, 0.9808673469387755, 0.982496194824962, 0.9805491990846682, 0.9878987898789879, 0.6799116997792494, 0.962962962962963, 0.9777227722772277, 0.9906639004149378, 0.7339936328263177, 0.6429028132992327, 0.717607973421927, 0.9868020304568528, 0.7341855129465749, 0.9919632606199771, 0.9878892733564014, 0.9721518987341772, 0.9813218390804598, 0.9921942758022549, 0.9847328244274809, 0.9846266471449487, 0.9791666666666666, 0.9291383219954649, 0.9908779931584949, 0.7830667186890363, 0.9181518151815181, 0.718059558117195, 0.9883103081827843, 0.9722222222222222, 0.3250598086124402, 0.6964795432921027, 0.2989436136644259, 0.24103695532266955, 0.966802562609202, 0.9523346303501945, 0.9523809523809523, 0.9101694915254237, 0.9162393162393162, 0.9788732394366197, 0.9580374435119432, 0.9794344473007712, 0.9876339653751031, 0.9892739273927392, 0.988421052631579, 0.9816810344827587, 0.9894837476099426, 0.32407549485959797, 0.7800632911392404, 0.8364579178300757, 0.804735883424408, 0.9924462521789658, 0.9793621013133208, 0.9830124575311439, 0.9795719844357976, 0.9796116504854369, 0.9810606060606061, 0.5266974291364535, 0.5423280423280423, 0.5155198610809637, 0.40958455438717467, 0.5055944055944056, 0.9783653846153846, 0.9806138933764136, 0.9854368932038835, 0.704597177969959, 0.9809027777777778, 0.9531791907514451, 0.9834586466165414, 0.7231322413104275, 0.9858256555634302, 0.9901506373117034, 0.9913860610806577, 0.9688473520249221], 'mean_accuracy': 0.9024965421901794} length : 250
+Model accuracy dictionary saved to /home/sebastian/Documents/Hauptprojekt/Arrays/DonutInfoExtraction/model_accuracies_after.pkl
+Model accuracy dictionary saved to /home/sebastian/Documents/Hauptprojekt/Arrays/DonutInfoExtraction/model_accuracies_after.pkl
+Model accuracy dictionary saved to /home/sebastian/Documents/Hauptprojekt/Arrays/DonutInfoExtraction/model_accuracies_after.pkl
+Model accuracy dictionary saved to /home/sebastian/Documents/Hauptprojekt/Arrays/DonutInfoExtraction/model_accuracies_after.pkl
