@@ -2,15 +2,15 @@ import os
 
 import keras
 
-IMG_WIDTH = 1692
+DATA_PATH = os.path.join('..', '..', 'Daten_sorted')
+
 IMG_HEIGHT = 2245
-IMG_WIDTH_REDUCED = int(IMG_WIDTH / 2)
+IMG_WIDTH = 1692
 IMG_HEIGHT_REDUCED = int(IMG_HEIGHT / 2)
+IMG_WIDTH_REDUCED = int(IMG_WIDTH / 2)
 
-data_path = os.path.join('..', '..', 'Daten_sorted')
 
-
-def get_datasets():
+def get(scale=False, data_path=DATA_PATH):
     training, validation = keras.utils.image_dataset_from_directory(
         directory=data_path,
         label_mode='categorical',
@@ -20,7 +20,7 @@ def get_datasets():
         subset='both',
         validation_split=0.2,
     )
-    # training_normalized = training.map(lambda x, y: (x / 255.0, y))
-    # validation_normalized = validation.map(lambda x, y: (x / 255.0, y))
-    # return training_normalized, validation_normalized
+    if scale:
+        training = training.map(lambda x, y: (x / 255.0, y))
+        validation = validation.map(lambda x, y: (x / 255.0, y))
     return training, validation

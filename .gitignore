@@ -1,15 +1,11 @@
-/.env
-/.idea
-/Daten.nosync
-/Daten_Donut.nosync
-/Daten_sorted.nosync
+.idea
 /EasyOCR
 /Models
 /Daten
 /Daten_Donut
 /Daten_Donut_all_classes
 /Daten_Donut_random
-/Daten_sorted
+Daten_sorted
 lightning_logs/
 test/
 /Information Extraction/Donut
